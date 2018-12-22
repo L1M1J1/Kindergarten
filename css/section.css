@@ -1,0 +1,149 @@
+body {
+    /*background: url("../images/bg.jpg") no-repeat;*/
+    width: 100%;
+    /*height: 768px;*/
+    /*background-size: cover;*/
+    /*background-position: -140px -191px;*/
+    background-color: rgba(242,242,242,.1);
+
+
+}
+section {
+
+    position: relative;
+    width: 100%;
+    /*height: 768px;*/
+    /*background-color: rgba(242,242,242,.3);*/
+
+}
+
+
+
+
+.operation {
+    color: #fff6f6;
+    font-size: 28px;
+    margin: 60px 0 50px 0;
+}
+
+
+.button {
+    background-color: rgba(36,33,72,.6);
+    color: #fff6f6;
+    font-size: 13px;
+    width: 57px;
+    height: 28px;
+    border:0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+
+
+.table {
+    text-align: center;
+    background-color: rgba(36,33,72,.6);
+    color: #fff6f6;
+    font-size: 13px;
+}
+.table a {
+    color: #fff6f6;
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.table td {
+    height: 45px;
+}
+
+
+.add,
+.adds1{
+    background-color: rgba(60, 52, 88, 1);
+    color: #fff6f6;
+    text-align: center;
+    padding: 83px 0 30px;
+    margin-top: -197px;
+    display: none;
+}
+.add label,
+.adds1 label{
+    font-weight: 300;
+}
+.add input,
+.adds1 input{
+    margin-left:20px;
+    height: 29px;
+    width: 37%;
+    color: #333;
+}
+.add p,
+.adds1 p{
+    margin-bottom: 45px;
+}
+.add p:nth-child(3),
+.adds1 p:nth-child(3){
+    margin-bottom: 0;
+}
+
+.bttn {
+    margin-top: 56px;
+    margin-left: 330px;
+}
+
+
+.bttn button+button {
+    margin-left: 10px;
+}
+
+/*查看*/
+.see,
+.see1{
+    background-color: rgba(60, 52, 88, 1);
+    color: #fff6f6;
+    /*text-align: center;*/
+    padding: 46px 0 30px;
+    margin-top: -190px;
+    display: none;
+}
+
+.see p,
+.see1 p {
+    margin: 0 113px 31px;
+}
+.re {
+    text-align: right;
+    margin-right: 110px;
+}
+
+.re span {
+    cursor: pointer;
+}
+.operation a{
+    font-size: 13px;
+    color: #fff6f6;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}
+
+

@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(255,255,255,.1);
+}
+/*.container-fluid{*/
+    /*background-color: rgba(255,255,255,.1);*/
+/*}*/
+div{
+    /*border: 1px solid red;*/
+}
+/*.yin{*/
+    /*display: none;*/
+/*}*/
+/*收件箱和搜索*/
+a{
+    color: #fff6f6;
+}
+a:hover{
+    color: #fff6f6;
+}
+.diYi{
+    position: relative;
+    top: 80px;
+}
+.one{
+    position: absolute;
+    font-size: 1.75em;
+    left: 15%;
+}
+.shoJ{
+    color: #fff6f6;
+}
+.two{
+    position: absolute;
+    right: 15%;
+}
+#du{
+    width: 200px;
+    height: 30px;
+    background-color: rgba(36,33,72,.6);
+    position: absolute;
+    right: 3.9%;
+}
+#se{
+    background-color: rgba(36,33,72,.6);
+    color: #fff6f6;
+}
+/*收到的邮件*/
+.diEr{
+    position: relative;
+    top: 150px;
+}
+.myTou{
+    height: 45px;
+    line-height: 45px;
+    /*background-color: rgba(36,33,72,.6);*/
+    position: absolute;
+    left: 12%;
+    right: 12%;
+}
+/*删除*/
+.zi1{
+    color: #fff6f6;
+    font-size: 1em;
+    position: absolute;
+    left: 5%;
+    cursor: pointer;
+}
+/*转发*/
+.zi2{
+    color: #fff6f6;
+    font-size: 1em;
+    position: absolute;
+    left: 10%;
+}
+/*下拉菜单1*/
+.zi3{
+    color: #242148;
+    font-size: 1em;
+    position: absolute;
+    left: 15%;
+}
+/*下拉菜单2*/
+.zi4{
+    color: #242148;
+    font-size: 1em;
+    position: absolute;
+    left: 15%;
+}
+.zi20{
+    color: #fff6f6;
+    font-size: 1em;
+    position: absolute;
+    right: 15%;
+}
+/*下一页*/
+.zi5{
+    color: #fff6f6;
+    font-size: 1em;
+    position: absolute;
+    right: 10%;
+}
+.zi6{
+    color: #fff6f6;
+    font-size: 1em;
+    position: absolute;
+    right: 5%;
+}
+.myTable{
+    height: 45px;
+    color: #fff6f6;
+    text-align: center;
+    line-height: 45px;
+    width: 76%;
+    background-color: rgba(36,33,72,.6);
+    position: absolute;
+    top: 45px;
+    left: 12%;
+    right: 12%;
+}
+.kaoZuo{
+    text-align: left;
+    padding-left: 20px;
+    cursor: pointer;
+}
+/*打开的邮件*/
+/*.diSi{*/
+    /*position: relative;*/
+    /*top: 155px;*/
+    /*!*display: none;*!*/
+/*}*/
+.beiJin{
+    width: 700px;
+    height: 450px;
+    background-color: #3c3458;
+    position: absolute;
+    left: 22%;
+    top: 100px;
+    display: none;
+}
+.diWu{
+    position: relative;
+    top: 15px;
+}
+.zi7{
+    color: #fff6f6;
+    font-size: 14px;
+    position: absolute;
+    left: 25px;
+    cursor: pointer;
+}
+.zi8{
+    color: #fff6f6;
+    font-size: 14px;
+    position: absolute;
+    left: 60px;
+}
+.zi9{
+    color: #fff6f6;
+    font-size: 14px;
+    position: absolute;
+    left: 100px;
+}
+.zi10{
+    color: #fff6f6;
+    font-size: 14px;
+    position: absolute;
+    right:100px;
+}
+.zi11{
+    color: #fff6f6;
+    font-size: 14px;
+    position: absolute;
+    right:40px;
+}
+.diLiu{
+    position: relative;
+    top: 55px;
+}
+.zi12{
+    color: #fff6f6;
+    font-size: 14px;
+    position: absolute;
+    left:60px;
+}
+.diQi{
+    position: relative;
+    top: 80px;
+}
+.diBa{
+    position: relative;
+    top: 105px;
+}
+.diJiu{
+    position: relative;
+    top: 135px;
+}
+.zi13{
+    color: #fff6f6;
+    font-size: 14px;
+    width: 600px;
+    position: absolute;
+    left: 60px;
+}
+.tan{
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}

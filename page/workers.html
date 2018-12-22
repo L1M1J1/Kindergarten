@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/section.css">
+    <link rel="stylesheet" href="../css/workers.css">
+</head>
+<body>
+<!--职工管理-->
+<section>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-10 col-lg-offset-1">
+                <!--职工管理操作-->
+                <div class="operation">
+                    <span>职工管理</span>
+                    <a  id="worker1">增加</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-lg-offset-1">
+                <table class="table table-bordered">
+                    <tr>
+                        <td></td>
+                        <td>编号</td>
+                        <td>姓名</td>
+                        <td>部门</td>
+                        <td>职务</td>
+                        <td>电话号码</td>
+                        <td>在职状态</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="test">
+                        </td>
+                        <td class="bHao">001</td>
+                        <td class="xMing">李思源</td>
+                        <td class="bMen">教育部</td>
+                        <td class="zWu">主班老师</td>
+                        <td class="sJi">15984055653</td>
+                        <td>
+                            <select name="" id="sel">
+                                <option value="">在职</option>
+                                <option value="">离岗</option>
+                                <option value="">请假</option>
+                            </select>
+                        </td>
+                        <td>
+                            <a href="#"  id="chankan1">查看</a>
+                            <a href="#"  id="bianji1">编辑</a>
+                            <a href="#" class="del">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="test">
+                        </td>
+                        <td class="bHao6">002</td>
+                        <td class="xMing6">郝冬青</td>
+                        <td class="bMen6">教育部</td>
+                        <td class="zWu6">副班老师</td>
+                        <td class="sJi6">15984590358</td>
+                        <td>
+                            <select name="" id="sel2">
+                                <option value="在职">在职</option>
+                                <option value="离岗">离岗</option>
+                                <option value="请假">请假</option>
+                            </select>
+                        </td>
+                        <td>
+                            <a href="#" id="chakan2">查看</a>
+                            <a href="#" id="bianji2">编辑</a>
+                            <a href="#" class="del">删除</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <!--增加-->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="workadd" id="workadd1">
+                    <p>
+                        <label for="">编号&nbsp;</label>
+                        <input class="bianhao" value="001" type="text">
+                    </p>
+                    <p>
+                        <label for="">姓名<sup>*</sup></label>
+                        <input class="xinming" value="xxx" type="text">
+                    </p>
+                    <p>
+                        <label for="">手机<sup>*</sup></label>
+                        <input class="shouji" value="xxxxxx" type="text">
+                    </p>
+                    <p>
+                        <label for="">部门<sup>*</sup></label>
+                        <input class="bumen" value="教育部" type="text">
+                    </p>
+                    <p>
+                        <label for="">职务<sup>*</sup></label>
+                        <input class="zhiwu" value="主班老师" type="text">
+                    </p>
+                    <p>
+                        <label for="">邮箱&nbsp;</label>
+                        <input value="999999@qq.com" type="text">
+                    </p>
+                    <div class="wordbtn">
+                        <button class="button" id="workqu1">取消</button>
+                        <button class="button wordbtn1">新增</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--编辑-->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="workadd" id="workadd2">
+                    <p>
+                        <label for="">编号&nbsp;</label>
+                        <input class="biaohao2" value="001" type="text">
+                    </p>
+                    <p>
+                        <label for="">姓名<sup>*</sup></label>
+                        <input class="xinming2" value="李思源" type="text">
+                    </p>
+                    <p>
+                        <label for="">手机<sup>*</sup></label>
+                        <input  class="shouji2" value="15984055653" type="text">
+                    </p>
+                    <p>
+                        <label for="">部门<sup>*</sup></label>
+                        <input class="bumen2" value="教育部" type="text">
+                    </p>
+                    <p>
+                        <label for="">职务<sup>*</sup></label>
+                        <input class="zhiwu2" value="主班老师" type="text">
+                    </p>
+                    <p>
+                        <label for="">邮箱&nbsp;</label>
+                        <input value="999999@qq.com" type="text">
+                    </p>
+                    <div class="wordbtn">
+                        <button class="button" id="workqu2">取消</button>
+                        <button class="button wordbtn2">确定</button>
+                    </div>
+                </div>
+                <div class="workadd" id="workadd6">
+                    <p>
+                        <label for="">编号&nbsp;</label>
+                        <input class="biaohao6" value="002" type="text">
+                    </p>
+                    <p>
+                        <label for="">姓名<sup>*</sup></label>
+                        <input class="xinming6" value="郝冬青" type="text">
+                    </p>
+                    <p>
+                        <label for="">手机<sup>*</sup></label>
+                        <input  class="shouji6" value="15984590358" type="text">
+                    </p>
+                    <p>
+                        <label for="">部门<sup>*</sup></label>
+                        <input class="bumen6" value="教育部" type="text">
+                    </p>
+                    <p>
+                        <label for="">职务<sup>*</sup></label>
+                        <input class="zhiwu6" value="主班老师" type="text">
+                    </p>
+                    <p>
+                        <label for="">邮箱&nbsp;</label>
+                        <input value="999999@qq.com" type="text">
+                    </p>
+                    <div class="wordbtn">
+                        <button class="button" id="workqu6">取消</button>
+                        <button class="button wordbtn6">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--查看-->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="workadd" id="workadd3">
+                    <div class="pad">
+                        <p>
+                            <span>编号：</span>
+                            <span class="bianhao3"></span>
+                        </p>
+                        <p>
+                            <span>证件号码：</span>
+                            <span>510824199706097470</span>
+                        </p>
+                    </div>
+                    <div class="pad">
+                        <p>
+                            <span>姓名：</span>
+                            <span class="xinming3"></span>
+                        </p>
+                        <p class="padmargin">
+                            <span>手机号码：</span>
+                            <span class="shouji3"></span>
+                        </p>
+                    </div>
+                    <div class="pad">
+                        <p>
+                            <span>部门：</span>
+                            <span class="bumen3"></span>
+                        </p>
+                        <p class="padmargin">
+                            <span>通讯地址：</span>
+                            <span>四川省成都市</span>
+                        </p>
+                    </div>
+                    <div class="pad">
+                        <p >
+                            <span >职务：</span>
+                            <span class="zhiwu3"></span>
+                        </p>
+                        <p class="padmg">
+                            <span>在职状态：</span>
+                            <span class="zhuangtai3"></span>
+                        </p>
+                    </div>
+
+
+                    <div class="wordbtn">
+                        <button class="button" id="workqu3">确定</button>
+                    </div>
+                </div>
+                <div class="workadd" id="workadd7">
+                    <div class="pad">
+                        <p>
+                            <span>编号：</span>
+                            <span class="bianhao7"></span>
+                        </p>
+                        <p>
+                            <span>证件号码：</span>
+                            <span>510824199706097470</span>
+                        </p>
+                    </div>
+                    <div class="pad">
+                        <p>
+                            <span>姓名：</span>
+                            <span class="xinming7"></span>
+                        </p>
+                        <p class="padmargin">
+                            <span>手机号码：</span>
+                            <span class="shouji7"></span>
+                        </p>
+                    </div>
+                    <div class="pad">
+                        <p>
+                            <span>部门：</span>
+                            <span class="bumen7"></span>
+                        </p>
+                        <p class="padmargin">
+                            <span>通讯地址：</span>
+                            <span>四川省成都市</span>
+                        </p>
+                    </div>
+                    <div class="pad">
+                        <p >
+                            <span >职务：</span>
+                            <span class="zhiwu7"></span>
+                        </p>
+                        <p class="padmg">
+                            <span>在职状态：</span>
+                            <span class="zhuangtai7"></span>
+                        </p>
+                    </div>
+
+
+                    <div class="wordbtn">
+                        <button class="button" id="workqu7">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    // 员工增加
+    $(function(){
+        $("#worker1").click(function(){
+           $("#workadd1").show();
+        });
+        $("#workqu1").click(function(){
+            $("#workadd1").hide();
+        });
+        $("#bianji1").click(function(){
+            $("#workadd2").show();
+            return false;
+        });
+        $("#workqu2").click(function(){
+            $("#workadd2").hide();
+        });
+        $("#chankan1").click(function(){
+            $("#workadd3").show();
+            // 获取表格内容
+            var bHao=$(".bHao");
+            var xMing=$(".xMing");
+            var bMen=$(".bMen");
+            var zWu=$(".zWu");
+            var sJi=$(".sJi");
+            var sel=$("#sel option:selected");
+            //获取文本框value值
+            var bianhao=$(".bianhao3");
+            var xinming=$(".xinming3");
+            var shouji=$(".shouji3");
+            var bumen=$(".bumen3");
+            var zhiwu=$(".zhiwu3");
+            var zhuangtai=$(".zhuangtai3");
+
+            bianhao.text(bHao.text());
+            xinming.text(xMing.text());
+            shouji.text(sJi.text());
+            bumen.text(bMen.text());
+            zhiwu.text(zWu.text());
+            zhuangtai.text(sel.text());
+            return false;
+        });
+        $("#workqu3").click(function(){
+            $("#workadd3").hide();
+        });
+
+        //新增
+        $(".wordbtn1").click(function(){
+
+           //获取文本框
+            var $bianhao=$(".bianhao");
+            var $xinming=$(".xinming");
+            var $shouji=$(".shouji");
+            var $bumen=$(".bumen");
+            var $zhiwu=$(".zhiwu");
+            // 获取文本框值
+            var bianhao=$bianhao.val();
+            var xinming=$xinming.val();
+            var shouji=$shouji.val();
+            var bumen=$bumen.val();
+            var zhiwu=$zhiwu.val();
+            //添加到表格
+            $("<tr></tr>")
+                .append("<td><input type='checkbox'></td>")
+                .append("<td>"+bianhao+"</td>")
+                .append("<td>"+xinming+"</td>")
+                .append("<td>"+bumen+"</td>")
+                .append("<td>"+zhiwu+"</td>")
+                .append("<td>"+shouji+"</td>")
+                .append("<td>\n" +
+                    "                            <select name=\"\" id=\"\">\n" +
+                    "                                <option value=\"在职\">在职</option>\n" +
+                    "                                <option value=\"离岗\">离岗</option>\n" +
+                    "                                <option value=\"请假\">请假</option>\n" +
+                    "                            </select>\n" +
+                    "                        </td>")
+                .append(" <td>\n" +
+                    "                            <a href=\"#\"  id=\"chankan1\">查看</a>\n" +
+                    "                            <a href=\"#\"  id=\"bianji1\">编辑</a>\n" +
+                    "                            <a href=\"#\" class=\"del\">删除</a>\n" +
+                    "                        </td>")
+                .appendTo("table>tbody");
+
+            //清空文本框
+            $bianhao.val();
+            $xinming.val();
+            $shouji.val();
+            $bumen.val();
+            $zhiwu.val();
+
+            $("#workadd1").hide();
+        });
+
+        //编辑
+        $(".wordbtn2").click(function(){
+            // 获取表格内容
+            var bHao=$(".bHao");
+            var xMing=$(".xMing");
+            var bMen=$(".bMen");
+            var zWu=$(".zWu");
+            var sJi=$(".sJi");
+            //获取文本框value值
+            var biaohao=$(".biaohao2");
+            var xinming=$(".xinming2");
+            var shouji=$(".shouji2");
+            var bumen=$(".bumen2");
+            var zhiwu=$(".zhiwu2");
+
+            bHao.text(biaohao.val());
+            xMing.text(xinming.val());
+            sJi.text(shouji.val());
+            bMen.text(bumen.val());
+            zWu.text(zhiwu.val());
+            $("#workadd2").hide();
+
+        });
+
+        //删除
+        $('table>tbody').on('click', ".del", function () {
+            $(this).closest('tr').remove();
+        });
+
+        //第二个
+        $("#bianji2").click(function(){
+           $("#workadd6") .show();
+           return false;
+        });
+
+        $("#workqu6").click(function () {
+           $("#workadd6").hide();
+        });
+
+        $(".wordbtn6").click(function () {
+            // 获取表格内容
+            var bHao=$(".bHao6");
+            var xMing=$(".xMing6");
+            var bMen=$(".bMen6");
+            var zWu=$(".zWu6");
+            var sJi=$(".sJi6");
+            //获取文本框value值
+            var biaohao=$(".biaohao6");
+            var xinming=$(".xinming6");
+            var shouji=$(".shouji6");
+            var bumen=$(".bumen6");
+            var zhiwu=$(".zhiwu6");
+
+            bHao.text(biaohao.val());
+            xMing.text(xinming.val());
+            sJi.text(shouji.val());
+            bMen.text(bumen.val());
+            zWu.text(zhiwu.val());
+            $("#workadd6").hide();
+        });
+
+        $("#chakan2").click(function () {
+           $("#workadd7").show();
+            var bHao=$(".bHao6");
+            var xMing=$(".xMing6");
+            var bMen=$(".bMen6");
+            var zWu=$(".zWu6");
+            var sJi=$(".sJi6");
+            var sel=$("#sel2 option:selected");
+            //获取文本框value值
+            var bianhao=$(".bianhao7");
+            var xinming=$(".xinming7");
+            var shouji=$(".shouji7");
+            var bumen=$(".bumen7");
+            var zhiwu=$(".zhiwu7");
+            var zhuangtai=$(".zhuangtai7");
+
+            bianhao.text(bHao.text());
+            xinming.text(xMing.text());
+            shouji.text(sJi.text());
+            bumen.text(bMen.text());
+            zhiwu.text(zWu.text());
+            zhuangtai.text(sel.text());
+           return false;
+        });
+        $("#workqu7").click(function () {
+           $("#workadd7").hide();
+        });
+    })
+</script>
+
+</body>
+</html>

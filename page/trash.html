@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trash</title>
+    <link rel="stylesheet" href="../css/trashCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<body>
+<p>垃圾箱</p>
+<div id="search">
+    <input type="text" value="" id="boom" placeholder="search...">
+    <button class="iconfont">&#xe704;</button>
+</div>
+<div class="divHead">
+    <span class="span0">全选</span>
+    <span class="span1">删除</span>
+    <span class="span2">还原</span>
+    <span class="span5">1/2</span>
+    <span class="span6 span7">上一页</span>
+    <span class="span6 span8">下一页</span>
+</div>
+
+<table>
+<!--<tr class="colsTr">
+    <td colspan="3" class="colsTd ">
+    <span class="span0">全选</span>
+    <span class="span1">删除</span>
+    <span class="span2">还原</span>
+    <span class="span5">1/2</span>
+    <span class="span6 span7">上一页</span>
+    <span class="span6 span8">下一页</span>
+    </td>
+</tr>-->
+    <tr class="show">
+        <td class="firstTd " >
+            <span>发件人</span>
+        </td>
+        <td class="secondTd">
+            <span>主题</span>
+        </td>
+        <td class="thirdTd">
+            <span>时间</span>
+        </td>
+    </tr>
+    <tr class="show">
+        <td colspan="3" class="colsTd colsTd2">
+          <span>本周</span>
+        </td>
+    </tr>
+    <tr class="show">
+        <td class="firstTd " >
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">王小七</span>
+        </td>
+        <td class="secondTd">
+            <span>关于大班的户外活动</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.09.18</span>
+        </td>
+    </tr>
+    <tr class="show">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">王小七</span>
+        </td>
+        <td class="secondTd">
+            <span>关于幼儿园环境绿化以及种植小树苗活动的通知内容</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.09.17</span>
+        </td>
+    </tr>
+    <tr class="show">
+        <td colspan="3" class="colsTd colsTd2">
+            <span>更早</span>
+        </td>
+    </tr>
+    <tr class="show">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">林青霞</span>
+        </td>
+        <td class="secondTd">
+            <span>关于学生下周伙食的调研</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.09.08</span>
+        </td>
+    </tr>
+    <tr class="show">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">林青霞</span>
+        </td>
+        <td class="secondTd">
+            <span>关于召开学生家长会通知</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.09.06</span>
+        </td>
+    </tr>
+    <tr class="show">
+        <td colspan="3" class="colsTd colsTd2"></td>
+    </tr>
+
+    <tr class="noShow">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">武则天</span>
+        </td>
+        <td class="secondTd">
+            <span>关于园长更换选举的会议</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.08.31</span>
+        </td>
+    </tr>
+    <tr class="noShow">
+    <td class="firstTd">
+        <input type="checkbox" name="chose">
+        <span class="span3 iconfont
+">&#xe635;</span>
+        <span class="span4">张小五</span>
+    </td>
+    <td class="secondTd">
+        <span>设计章鱼班户外活动</span>
+    </td>
+    <td class="thirdTd">
+        <span>2018.08.30</span>
+    </td>
+</tr>
+    <tr class="noShow">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">张小五</span>
+        </td>
+        <td class="secondTd">
+            <span>设计章鱼班户外活动</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.08.30</span>
+        </td>
+    </tr>
+    <tr class="noShow">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">张小五</span>
+        </td>
+        <td class="secondTd">
+            <span>设计章鱼班户外活动</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.08.30</span>
+        </td>
+    </tr>
+    <tr>
+    <td class="firstTd">
+        <input type="checkbox" name="chose">
+        <span class="span3 iconfont
+">&#xe635;</span>
+        <span class="span4">林青霞</span>
+    </td>
+    <td class="secondTd">
+        <span>关</span>
+    </td>
+    <td class="thirdTd">
+        <span>2018.09.06</span>
+    </td>
+</tr>
+    <tr class="noShow">
+    <td class="firstTd">
+        <input type="checkbox" name="chose">
+        <span class="span3 iconfont
+">&#xe635;</span>
+        <span class="span4">林青霞</span>
+    </td>
+    <td class="secondTd">
+        <span>关于召开学生家长会通知</span>
+    </td>
+    <td class="thirdTd">
+        <span>2018.09.06</span>
+    </td>
+</tr>
+
+    <tr class="noShow">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">张小五</span>
+        </td>
+        <td class="secondTd">
+            <span>设计章鱼班户外活动</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.08.30</span>
+        </td>
+    </tr>
+
+    <tr class="noShow">
+    <td class="firstTd">
+        <input type="checkbox" name="chose">
+        <span class="span3 iconfont
+">&#xe635;</span>
+        <span class="span4">林青霞</span>
+    </td>
+    <td class="secondTd">
+        <span>关于召开学生家长会通知</span>
+    </td>
+    <td class="thirdTd">
+        <span>2018.09.06</span>
+    </td>
+</tr>
+    <tr class="noShow">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">黄蓉</span>
+        </td>
+        <td class="secondTd">
+            <span>水母班户外拍照</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.08.22</span>
+        </td>
+    </tr>
+    <tr class="noShow">
+        <td class="firstTd">
+            <input type="checkbox" name="chose">
+            <span class="span3 iconfont
+">&#xe635;</span>
+            <span class="span4">郭襄</span>
+        </td>
+        <td class="secondTd">
+            <span>关于舞蹈设计</span>
+        </td>
+        <td class="thirdTd">
+            <span>2018.08.18</span>
+        </td>
+    </tr>
+</table>
+<div id="emailD">
+ <span class="returnSpan">返回</span>
+ <span>回复</span>
+ <span class="deSpan">删除</span>
+    <span class="span10">上一封</span>
+    <span class="span11">下一封</span>
+    <p class="p2">发件人：&nbsp;&nbsp;&nbsp;王小七</p>
+    <p>时间：&nbsp;&nbsp;&nbsp;2018.09.18</p>
+    <p>收件人：&nbsp;&nbsp;&nbsp;何东</p>
+    <p class="p3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雨后初晴，阳光明媚。看一眼美玉般剔透的蓝空，听几声长调般悠扬的鸟鸣，心情瞬间大好。趁兴，到校园里走一遭。感受初秋的凉意，呼吸新鲜的空气，更想体味草木芬芳的诗意。<br>
+        　　悠闲漫步，便也惊喜地发现，那些各自孤立而彼此多情的草木，是率性而作的一首首诗，亦是天然自成的一阙阙词。<br>
+        　　最大气而洋洋洒洒般尽兴挥就的，是广场中央歌行体的国槐。两列齐整的槐，身形挺拔，姿态华美。一出口，便对仗工整。那绿，也是浓墨
+    </p>
+</div>
+<div id="searchD">
+ <span class="returnSpan2">返回</span>
+
+
+</div>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/trashJs.js"></script>
+</body>
+</html>

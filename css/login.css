@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1366px;
+    height: 640px;
+    background-image: url("../images/loginBg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.login{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 246, 246, 0.1);
+    overflow: hidden;
+}
+/*logo*/
+.loginName{
+    width: 70%;
+    height: 17%;
+    margin-left: 15%;
+    margin-top: 4%;
+    /*outline:1px solid whitesmoke;*/
+    color: #FFF6F6;
+}
+.loginName>img{
+    width: 12%;
+    float: left;
+    margin-left: 19%;
+}
+.loginName>span{
+    font-size: 36px;
+    letter-spacing: 5px;
+    float: left;
+    margin-top: 2.4%;
+}
+/*µÇÂ¼¿ò*/
+.loginBox{
+    width: 360px;
+    height: 280px;
+    background-color: rgba(36, 33, 72, 0.6);
+    position: absolute;
+    top: 29%;
+    left: 38.5%;
+}
+form{
+    position: relative;
+}
+.use{
+    font-size: 20px;
+    color: #FFF6F6;
+    position: absolute;
+    top: 25px;
+    left: 40%;
+}
+/*¹Ø±Õ°´Å¥*/
+.iconD{
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    font-size: 0.813em;
+}
+form>input{
+    float: left;
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+}
+form>input:nth-of-type(1){
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+/*µÇÂ¼°´Å¥*/
+form>button{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 16px;
+    color: #FFF6F6;
+    height: 35px;
+    border: none;
+    background-color: #242148;
+    margin-top: 14%;
+    border-radius: 5px;
+}
+/*Íü¼ÇÃÜÂë*/
+.forgetPw{
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+    color: #FFF6F6;
+    font-size: 13px;
+}
+.forgetPw:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*Íü¼ÇÃÜÂëµÄºÐ×Ó*/
+.forgetBox{
+    width: 574px;
+    height: 262px;
+    background-color: #3c3458;
+    position: absolute;
+    top: 0;
+    left: -120px;
+    display: none;
+    /*z-index: -1;*/
+    /*opacity: 0;*/
+}
+.forgetBox>span:nth-of-type(2){
+    color: #FFF6F6;
+    font-size: 14px;
+    position: absolute;
+    left: 120px;
+    top: 60px;
+}
+.forgetBox>div{
+    margin-top: 120px;
+    margin-left: 120px;
+}
+.forgetBox label{
+    color: #FFF6F6;
+    font-size: 13px;
+}
+.forgetBox>div>input{
+    width: 200px;
+    height: 25px;
+}
+.next{
+    height: 30px;
+    width: 100px;
+    background-color: #242148;
+    border: none;
+    border-radius: 5px;
+    color: #FFF6F6;
+    margin-left: 245px;
+    margin-top: 55px;
+}
+.iconD{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.iconD:hover{
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--></head>
+<link rel="stylesheet" href="../css/iconfont.css"/>
+<link rel="stylesheet" href="../css/banjiguanli.css"/>
+<body>
+<div class="table-responsive">
+    <div>
+        <span class="zi">学生管理</span>
+        <span class="zi1">增加</span>
+        <input type="text" value="search..." id="shousuo"/>
+        <span class="iconfont shousuo1" id="sou">&#xe704;</span>
+    </div>
+    <table class="table table-bordered1">
+        <thead>
+        <tr>
+            <th></th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>班级</th>
+            <th>出生年月</th>
+            <th>家长姓名</th>
+            <th>家长联系方式</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody class="hou">
+        <tr class="yihang">
+            <th scope="row" ><input type="checkbox"/></th>
+            <td id="tr-5">张晓明</td>
+            <td id="tr-4">男</td>
+            <td>苗苗班</td>
+            <td id="tr-6">2016-08-21</td>
+            <td id="tr-3">李小六</td>
+            <td id="tr-2">18975756482</td>
+            <td>
+                <span class="xian1">编辑</span>
+                <span class="xian3">删除</span>
+                <span class="xian2">查看</span>
+            </td>
+        </tr>
+        <tr class="erhang">
+            <th scope="row"><input type="checkbox"/></th>
+            <td id="tr-5-1">宋小宝</td>
+            <td id="tr-4-1">男</td>
+            <td id="ba">朵朵班</td>
+            <td id="tr-6-1">2016-02-4</td>
+            <td id="tr-3-1">士大夫</td>
+            <td id="tr-2-1">19874628515</td>
+            <td>
+                <span class="xian1-1">编辑</span>
+                <span class="xian3-1">删除</span>
+                <span class="xian2-1">查看</span>
+        </tr>
+        <tr class="sanhang">
+            <th scope="row"><input type="checkbox"/></th>
+            <td id="tr-5-2">昭仪</td>
+            <td id="tr-4-2">女</td>
+            <td>袋鼠班</td>
+            <td id="tr-6-2">2017-08-12</td>
+            <td id="tr-3-2">刘德华</td>
+            <td id="tr-2-2">14698215420</td>
+            <td>
+                <span class="xian1-2">编辑</span>
+                <span class="xian3-2">删除</span>
+                <span class="xian2-2">查看</span></td>
+        </tr>
+        <tr class="sihang">
+            <th scope="row"><input type="checkbox"/></th>
+            <td id="tr-5-3">武则天</td>
+            <td id="tr-4-3">女</td>
+            <td>小鹿班</td>
+            <td id="tr-6-3">2017-05-17</td>
+            <td id="tr-3-3">汤姆</td>
+            <td id="tr-2-3">14286240755</td>
+            <td>
+                <span class="xian1-3">编辑</span>
+                <span class="xian3-3">删除</span>
+                <span class="xian2-3">查看</span></td>
+        </tr>
+        <tr class="wuhang">
+            <th scope="row"><input type="checkbox"/></th>
+            <td id="tr-5-4">伽利略</td>
+            <td id="tr-4-4">男</td>
+            <td>水母班</td>
+            <td id="tr-6-4">2016-05-07</td>
+            <td id="tr-3-4">福德强</td>
+            <td id="tr-2-4">17820698410</td>
+            <td>
+                <span class="xian1-4">编辑</span>
+                <span class="xian3-4">删除</span>
+                <span class="xian2-4">查看</span></td>
+        </tr>
+        <tr class="liuhang">
+            <th scope="row"><input type="checkbox"/></th>
+            <td id="tr-5-5">范萨</td>
+            <td id="tr-4-5">男</td>
+            <td>大象班</td>
+            <td id="tr-6-5">2016-08-09</td>
+            <td id="tr-3-5">黄晓明</td>
+            <td id="tr-2-5">18456928510</td>
+            <td>
+                <span class="xian1-5">编辑</span>
+                <span class="xian3-5">删除</span>
+                <span class="xian2-5">查看</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="xue-bg">
+    <div class="zhuti">
+        <span class="zhuti-1">新增学生信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="diyi">
+        <span class="xinming">姓名:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15" class="klm"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xinming">家长姓名:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15" class="klm1"/>
+    </div>
+    <div class="dier">
+        <span class="xinming">性别:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="nan">男</span>&nbsp;
+        <input type="radio" value="男"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;<span class="nan">女</span>
+        <input type="radio" value="女"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xinming">家长联系方式:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15" class="klm4"/>
+    </div>
+    <div class="disan">
+        <span class="xinming">所属班级:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <select>
+            <option>朵朵班</option>
+            <option>苗苗班</option>
+            <option>袋鼠班</option>
+            <option>水母班</option>
+            <option>大象班</option>
+            <option>海豚班</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;
+        <select class="klm2">
+            <option>小班</option>
+            <option>中班</option>
+            <option>大班</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <span class="xinming">出生日期:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15" class="klm3"/>
+    </div>
+    <div class="disi">
+        <div class="anniu">
+            <button class="xue-btn1">取消</button>
+            <button class="xue-btn2">确定</button>
+        </div>
+    </div>
+</div>
+<div class="xue-bg1">
+    <div class="zhuti">
+        <span class="zhuti-1">新增学生信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="diyi">
+        <span class="xinming">姓名:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15" class="klm-1"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xinming">家长姓名:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15" class="klm1-1"/>
+    </div>
+    <div class="dier">
+        <span class="xinming">姓别:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="nan">男</span>&nbsp;
+        <input type="radio" value="男"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;<span class="nan">女</span>
+        <input type="radio" value="女"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xinming">家长联系方式:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15" class="klm4-1"/>
+    </div>
+    <div class="disan">
+        <span class="xinming">所属班级:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <select>
+            <option>朵朵班</option>
+            <option>苗苗班</option>
+            <option>袋鼠班</option>
+            <option>水母班</option>
+            <option>大象班</option>
+            <option>海豚班</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;
+        <select class="klm2-1">
+            <option>小班</option>
+            <option>中班</option>
+            <option>大班</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <span class="xinming">出生日期:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" size="15" class="klm3-1"/>
+    </div>
+    <div class="disi">
+        <div class="anniu">
+            <button class="xue-btn1">取消</button>
+            <button class="xue-btn2-1">确定</button>
+        </div>
+    </div>
+</div>
+<div class="xue-bg2">
+    <div class="zhuti">
+        <span class="zhuti-1">查看学生信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="diyi">
+        <span class="xinming">姓名:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="cha1"></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xinming">家长姓名:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="cha2"></span>
+    </div>
+    <div class="dier">
+        <span class="xinming">姓别:</span>
+        <span class="cha3"></span>
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="xinming">家长联系方式:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="cha4"></span>
+    </div>
+    <div class="disan">
+        <span class="xinming">所属班级:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="cha5"></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <span class="xinming">出生日期:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="cha6"></span>
+    </div>
+</div>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/banjiguanli.js"></script>
+<script>
+    $(".xue-btn1").click(function(){
+        $(".xue-bg").css("display","none");
+        $(".xue-bg1").css("display","none");
+    });
+    $(".xue-btn2").click(function(){
+        $(".xue-bg").css("display","none");
+        var addtr=$("<tr>"+ "<th ><input type='checkbox'></th>"+"<td>"+$(".klm").val()+"</td>"+
+        "<td>"+$("input[type='radio']:checked").val()+"</td>"+"<td>"+ $(".klm2 option:selected").text()
+        +"</td>"+"<td>"+$(".klm3").val() +"</td>"+"<td>"+$(".klm1").val() +"</td>"+"<td>" +
+        ""+$(".klm4").val()+"</td>"+"<td>编辑&nbsp;&nbsp;删除&nbsp;&nbsp;查看 </td>"+"</tr>");
+        addtr.appendTo($(".hou"));
+    });
+    $(".zi1").click(function(){
+        $(".xue-bg").css("display","block");
+    });
+    $(".xian1").click(function(){
+        $(".xue-bg1").css("display","block");
+    });
+    $(".xue-btn2-1").click(function(){
+        $("#tr-5").text($(".klm-1").val());
+        $("#tr-4").text($("input[type='radio']:checked").val());
+        $("#tr-6").text($(".klm3-1").val());
+        $("#tr-3").text($(".klm1-1").val());
+        $("#tr-2").text($(".klm4-1").val());
+        $(".xue-bg1").css("display","none");
+    });
+    $(".xian3").click(function(){
+        $(".yihang").remove();
+    });
+    $(".xian3-1").click(function(){
+        $(".erhang").remove();
+    });
+    $(".xian3-2").click(function(){
+        $(".sanhang").remove();
+    });
+    $(".xian3-3").click(function(){
+        $(".sihang").remove();
+    });
+    $(".xian3-4").click(function(){
+        $(".wuhang").remove();
+    });
+    $(".xian3-5").click(function(){
+        $(".liuhang").remove();
+    })
+    $(".xian2").click(function(){
+        $(".cha1").text($("#tr-5").text());
+        $(".cha2").text($("#tr-3").text());
+        $(".cha3").text($("#tr-4").text());
+        $(".cha4").text($("#tr-2").text());
+        $(".cha5").text($("#ba").text());
+        $(".cha6").text($("#tr-6").text());
+        $(".xue-bg2").css("display","block");
+    });
+//    搜索
+    $("#sou").click(function(){
+        var tbody=document.getElementsByTagName("tbody")[0];
+        var tableTr=tbody.getElementsByTagName("tr");
+        for(var i=0;i<tableTr.length;i++){
+            var td=tableTr[i].getElementsByTagName("td")[0];
+            if($("#shousuo").val()==tableTr[i].getElementsByTagName("td")[0].innerHTML){
+                $(tableTr[i]).siblings().remove();
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

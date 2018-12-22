@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>桦夏幼儿园</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="css/Kindergarten.css"/>
+</head>
+<body>
+<div class="container-fluid home">
+    <!-- logo-->
+    <div class="logo">
+        桦夏幼儿园
+    </div>
+    <!-- 上面的导航  个人中心-->
+    <div class="row personal">
+        <!-- 年月日-->
+        <div class="myDate">
+            <span class="iconfont myTxt">&#xe670;</span>
+            <span class="myDateTxt"></span>
+        </div>
+        <!-- 时钟-->
+        <div class="myTime">
+            <span class="iconfont myTxt">&#xe65d;</span>
+            <span class="myTimeTxt"></span>
+        </div>
+        <!-- 个人信息-->
+        <div class="information">
+            <img src="images/tx.jpg" alt="头像"/>
+            <a href="page/personal.html" class="useN" id="useCopy" target="myFrame">用户名</a>
+            <a href="page/login.html" class="logOff">退出</a>
+        </div>
+    </div>
+    <!-- 左侧菜单-->
+    <div class="menuLeft">
+        <!-- 基础管理-->
+        <div class="management3.。。。。。。。。。。。。。。。。。。。。。。。。。。。。" title="基础管理">
+            <span class="iconfont menuIcon">&#xe693;</span>
+            <span class="menuTxt">基础管理</span>
+            <ul>
+                <li><a href="page/section.html" target="myFrame">部门管理</a></li>
+                <li><a href="page/workers.html" target="myFrame">职工管理</a></li>
+                <li><a href="page/banjiguanli.html" target="myFrame">班级管理</a></li>
+                <li><a href="page/xueshengguanli.html" target="myFrame">学生管理</a></li>
+            </ul>
+        </div>
+        <!-- 权限管理-->
+        <div class="jurisdiction" title="权限管理">
+            <span class="iconfont menuIcon">&#xe608;</span>
+            <span class="menuTxt">
+                <a href="page/Jurisdiction.html" target="myFrame" >权限管理</a>
+            </span>
+        </div>
+        <!-- 考勤管理-->
+        <div class="check" title="考勤管理">
+            <span class="iconfont menuIcon">&#xe611;</span>
+            <span class="menuTxt">考勤管理</span>
+            <ul>
+                <li><a href="page/Attendance.html" target="myFrame">出勤情况</a></li>
+                <li><a href="page/leave.html" target="myFrame">请假申请</a></li>
+            </ul>
+        </div>
+        <!-- 照片墙-->
+        <div class="photo" title="照片墙">
+            <span class="iconfont menuIcon">&#xe640;</span>
+            <span class="menuTxt">照片墙</span>
+            <ul>
+                <li><a href="page/photoWallLg.html" target="myFrame">大班</a></li>
+                <li><a href="page/photoWallMd.html" target="myFrame">中班</a></li>
+                <li><a href="page/photoWallSm.html" target="myFrame">小班</a></li>
+            </ul>
+        </div>
+        <!--邮件 -->
+        <div class="mail" title="邮件">
+            <span class="iconfont menuIcon">&#xe635;</span>
+            <span class="menuTxt">邮件</span>
+            <ul>
+                <li><a href="page/outbox.html" target="myFrame">发件箱</a></li>
+                <li><a href="page/Inbox.html" target="myFrame">收件箱</a></li>
+                <li><a href="page/drafts.html" target="myFrame">草稿箱</a></li>
+                <li><a href="page/trash.html" target="myFrame">垃圾箱</a></li>
+            </ul>
+        </div>
+        <!-- 公告-->
+        <div class="notice" title="公告">
+            <span class="iconfont menuIcon">&#xe678;</span>
+            <span class="menuTxt">公告</span>
+            <ul>
+                <li><a href="page/notice.html" target="myFrame">查看公告</a></li>
+                <li><a href="page/fabugonggao.html" target="myFrame">发布公告</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="myIframe">
+    <iframe src="page/first.html" name="myFrame" height="99%" width="100%" frameborder=0></iframe>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/Kindergarten.js"></script>
+</body>
+</html>

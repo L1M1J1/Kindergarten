@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>权限管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/logoko1.png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Jurisdiction.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="container_all">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Jurisdiction">
+            <h1>权限管理</h1>
+        </div>
+        <div class="Jurisdiction_all">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+                <p class="setColor">职位：</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                <input type="text" class="form-control search_form" placeholder="请输入职位">
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-12">
+                <p class="setColor">职位状态</p>
+            </div>
+            <div class=" col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                <select class="form-control search_form job_state">
+                    <option>启用</option>
+                    <option>禁用</option>
+                </select>
+            </div>
+
+            <div class=" col-lg-offset-2 col-md-offset-2  col-lg-1 col-md-1 col-sm-1 col-xs-7">
+                <input class="btn btn-default hehe" data-toggle="modal" data-target="#myModal1" type="button" value="添加人员">
+            </div>
+        </div>
+
+        <!--表格-->
+        <div class="col-lg-9 Jurisdiction">
+            <table class="table table-bordered" data-toggle="table" data-url="data.js" data-height="300" data-pagination="true">
+                <tr>
+                    <td>编号</td>
+                    <td>姓名</td>
+                    <td>职位</td>
+                    <td>部门</td>
+                    <td>已有权限</td>
+                    <td>角色状态</td>
+                    <td>操作</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!--模态框1-->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">权限设置</h4>
+            </div>
+            <div class="modal-body">
+                <!--模态框的内容-->
+                <div style="margin-bottom: 2%;">
+                    <span>姓名：</span><span class="zhangsan"></span> &nbsp; &nbsp;
+                    <span>职位：</span> <span class="zhangTea"></span>
+                </div>
+                <div>
+                    <span>选择状态</span>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="启用"> 启用
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="禁用">禁用
+                    </label>
+                </div>
+                <div class="tea_mas">
+                    <div class="Jur_teacher">
+                        <p id="teacher1">老师权限</p>
+                        <div id="teacher">
+                            <p><lable><input type="checkbox" name="test" value="CURD学生">CURD学生</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="查看公告">查看公告</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="推送邮件">推送邮件</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="CURD班级">CURD班级</lable></p>
+                        </div>
+                        <hr>
+                        <p id="yuanzhang1">园长权限</p>
+                        <div id="yuanzhang">
+                            <p><lable><input type="checkbox" name="test" value="CURD学生">CURD学生</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="查看公告">查看公告</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="推送邮件">推送邮件</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="CURD班级">CURD班级</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="发布公告">发布公告</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="发送邮件（老师、家长）">发送邮件（老师、家长）</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="照片墙发布">照片墙发布</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="照片墙查看">照片墙查看</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="员工的考勤查看">员工的考勤查看</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="员工的请假批准">员工的请假批准</lable></p>
+                            <p><lable><input type="checkbox" name="test" value="筛选员工、学生考勤">筛选员工、学生考勤</lable></p>
+                        </div>
+                    </div>
+                    <div class="jiantou">
+                        <p class="tianjia_button" title="添加权限" onclick="fun()"> >> </p>
+                        <p class="quxiao_button" title="取消权限" onclick="fun1()"> << </p>
+                    </div>
+                    <div class="master">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary model_save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--模态框2-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel1">添加人员</h4>
+            </div>
+            <div class="modal-body">
+                <!--添加人员的模态框-->
+                <label>姓名：</label>
+                <input type="text" class="form-control name" placeholder="请输入姓名">
+                <label>职位：</label>
+                <input type="text" class="form-control job" placeholder="请输入职位">
+                <label>部门：</label>
+                <input type="text" class="form-control department" placeholder="请输入部门">
+                <label>权限：</label>
+                <input type="text" class="form-control Jur_self" readonly placeholder="权限设置">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary increas">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/data.js"></script>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/Jurisdiction.js"></script>
+</body>
+</html>

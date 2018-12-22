@@ -1,0 +1,92 @@
+body{
+    background-color: rgba(255, 246, 246, 0.1);
+    width: 100%;
+    height: 100%;
+}
+/*每个表格的距离*/
+.leave{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+.leave_all{
+    margin-bottom: 1.5%;
+}
+/*页面背景*/
+/*.container-fluid{*/
+    /*background-color: rgba(255, 255, 255, 0.3);*/
+/*}*/
+.container_all{
+    overflow: hidden;
+}
+/*请假申请的标题*/
+.leave span{
+    color: #fff6f6;
+}
+.form_all{
+    margin-left: 12%;
+}
+.form-control{
+    border: none!important;
+    border-radius: 0!important;
+}
+/*字体*/
+.control-label{
+    color:#FFF6F6 ;
+    /*float: right;*/
+    text-align: right;
+}
+/*小红点（必填）*/
+.control-label span{
+    color: red;
+    float: right;
+    margin-left: 5px;
+}
+/*提交按钮*/
+.btn-primary{
+    background-color: #242148;
+    margin-top: 3%;
+}
+.leave_button{
+    padding-left: 25px;
+}
+@media screen and (min-width: 1200px){
+     .leave span{
+         font-size: 28px;
+     }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px){
+    .leave span{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 767px){
+    .leave span{
+        font-size: 20px;
+    }
+    .leave_button{
+        margin-left: 0px;
+    }
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}

@@ -1,0 +1,369 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    width:100%;
+    height:100%;
+    background-color: rgba(255, 246, 246, 0.1);
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.myContainer{
+    width:100%;
+    /*height:auto;*/
+
+    padding:5% 5%;
+}
+
+/*===========classPhoto  班级照片墙============*/
+.classPhoto {
+    display: block;
+}
+
+.container{
+    padding:0;
+}
+
+.row{
+    margin:0;
+    overflow: hidden;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*解决div高度不等问题*/
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+.classContainer{
+    position: relative;
+    margin-top:1%;
+}
+
+.classContainer:hover .touM{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.classContainer img{
+    margin-left:10%;
+    width:72%;
+    height:72%;
+    border:10px solid white;
+}
+
+/*透明层*/
+.touM{
+    position: absolute;
+    width:66%;
+    height:72%;
+    background-color:rgba(255,255,255,.6);
+    left:13%;
+    visibility: visible;
+    opacity: 1;
+    transition:all .5s ;
+}
+
+.touM p{
+    color:rgb(88,51,51);
+    font-size:1.6rem;
+    margin:26% 37%;
+}
+
+.add{
+    position: relative;
+}
+
+.newCover{
+    outline:1px solid gainsboro;
+    background-image: url('../images/blankImg.png');
+}
+
+.add .showCreate{
+    position: absolute;
+    top:28%;
+    left:42%;
+    font-size:2.5em;
+    color:black;
+    cursor: pointer;
+}
+
+/*=========createAlbum  创建相册==============*/
+.createAlbum{
+    display: none;
+}
+
+.createContent{
+   background-color:#fff;
+    border-radius: 5px;
+}
+
+.createContent header{
+    height:40px;
+    line-height: 40px;
+    width:100%;
+    border-radius: 5px;
+    background-color:rgb(235,235,235);
+}
+
+.createContent header .title{
+    margin-left:5%;
+}
+
+.createContent header .myClose{
+    position: absolute;
+    right:5%;
+    cursor: pointer;
+}
+
+.createContent form{
+    margin-top:30px;
+    padding:15px;
+}
+
+.albumDes{
+    margin-top:15%;
+}
+
+.createContent .createBtn{
+    margin-top:60%;
+    margin-left:83%;
+    background-color:rgb(36,33,72);
+    color:white;
+    padding:1%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.createContent .createBtn:active{
+    margin-top:61%;
+    margin-left:84%;
+}
+
+/*=====classDeatil  班级照片详情查看=======*/
+.classDetail{
+    display: none;
+}
+.detailPhoto{
+    position: relative;
+    background-color:rgba(255,255,255,.4);
+    display:block;
+    width:90%;
+    height:80%;
+    margin-left:5%;
+    padding:30px 10px 50px 40px;
+}
+
+.photoContainer{
+    position: relative;
+    margin-top:1%;
+}
+
+.photoContainer:hover .touM{
+    visibility: visible;
+    opacity: 1;
+}
+
+.photoContainer img{
+    margin-left:8%;
+    width:72%;
+    height:120px;
+}
+
+/*透明层*/
+.photoContainer .touM{
+    position: absolute;
+    width:72%;
+    height:120px;
+    background-color:rgba(255,255,255,.6);
+    left:8%;
+    visibility: hidden;
+    opacity: 0;
+    transition:all .5s ;
+}
+
+.photoContainer .touM .icon{
+    margin-left:29%;
+    margin-top:26%;
+}
+
+.icon>span{
+    font-size:24px;
+    color:rgb(112,112,112);
+    margin:5px;
+    cursor: pointer;
+}
+
+.myClose2{
+    position: absolute;
+    top:3%;
+    right:2%;
+    cursor: pointer;
+}
+
+/*==========picBanner 图片轮播查看大图===========*/
+
+.picBannerContainer{
+    display: none;
+}
+
+.picBanner{
+    position:absolute;
+    width:80%;
+    height:70%;
+    top:10%;
+    left:10%;
+    padding:30px 10px 50px 40px;
+    display: block;
+    background-color:rgba(0,0,0,.5);
+}
+
+.myClose3,.left,.right{
+    position: absolute;
+    color:white;
+    font-size:18px;
+    cursor: pointer;
+}
+
+.left,.right{
+    top:45%;
+}
+
+.myClose3{
+    top:3%;
+    right:2%;
+}
+
+.left{
+    left:3%;
+}
+
+.right{
+    right:3%;
+}
+
+.banner{
+    position: absolute;
+    left:20%;
+    top:10%;
+    width:60%;
+    height:75%;
+}
+
+/*=================删除图片==============*/
+.deletaContainer{
+    display: none;
+}
+
+.deletePic{
+    position:absolute;
+    width:80%;
+    height:70%;
+    top:10%;
+    left:10%;
+    padding:60px 10px 50px 40px;
+    display: block;
+    background-color:rgba(0,0,0,.5);
+}
+
+.deleteAtt{
+    margin:40px 0px 0px 20px;
+    font-size:1.8rem;
+}
+
+.myClose4{
+    position: absolute;
+    right:5%;
+    cursor: pointer;
+}
+
+.createContent .deleteBtn{
+    margin-top:30%;
+    margin-left:83%;
+    background-color:rgb(36,33,72);
+    color:white;
+    padding:1%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.createContent .deleteBtn:active{
+    margin-top:31%;
+    margin-left:84%;
+}
+
+.uploadNode span
+{
+    position: absolute;
+    top:34%;
+    left:40%;
+    font-size:20px;
+    cursor: pointer;
+}
+.uploadNode input{
+    font-size:12px;
+    margin-top:-40px;
+    opacity: 0;
+}
+
+
+
+

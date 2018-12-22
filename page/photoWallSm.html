@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>照片墙小班</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/iconfont.css"/>
+    <link rel="stylesheet" href="../css/photoWall.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--外层容器-->
+    <div class="myContainer">
+        <!-- classPhoto 小班班级照片列表-->
+        <div class="classPhoto container">
+            <div class="row">
+                <!-- 朵朵班-->
+                <div class="col-lg-4 col-md-4  col-sm-6 col-xs-12 duoduo classContainer">
+                    <img class="duoCover" src=""/>
+                    <div class="touM">
+                        <p>大象班</p>
+                    </div>
+                </div>
+                <!-- 苗苗班-->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 miaomiao classContainer">
+                    <img class="miaoCover" src=""/>
+                    <div class="touM">
+                        <p>袋鼠班</p>
+                    </div>
+                </div>
+                <!-- 花花班-->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 huahua classContainer">
+                <img class="huaCover" src=""/>
+                <div class="touM">
+                    <p>小鹿班</p>
+                </div>
+            </div>
+
+                <!-- 新建相册-->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 classContainer add" >
+                    <img class="newCover" src=""/>
+                    <span class="iconfont showCreate">&#xe628;</span>
+                </div>
+            </div>
+        </div> <!--classPhoto-->
+        <!-- 创建相册的弹框 -->
+        <div class="createAlbum">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-3 col-xs-2"></div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-8 createContent">
+                                <header>
+                        <span class="title">创建相册</span>
+                            <span class="iconfont myClose">&#xe70a;</span>
+                        </header>
+                        <form action="">
+                            <div class="form-group albumName">
+                                <label for="albumName" class="col-lg-3">相册名称:</label>
+                                <div class="col-lg-7">
+                                    <input type="text" class="form-control" id="albumName" maxlength="30" placeholder="输入相册名称">
+                                </div>
+                                <div class="col-lg-1">
+                                    <p class="nameNum">0/30</p>
+                                </div>
+                            </div>
+                            <div class="form-group albumDes">
+                                <label for="albumDes" class="col-lg-3">相册描述:</label>
+                                <div class="col-lg-7">
+                                    <textarea class="form-control" id="albumDes" rows="5" maxlength="200" placeholder="输入相册描述"></textarea>
+                                </div>
+                                <div class="col-lg-1">
+                                    <p class="desNum">0/200</p>
+                                </div>
+                            </div>
+                            <p class="createBtn">确定</p>
+                        </form>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3 col-xs-2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 班级照片详情查看-->
+        <div class="classDetail">
+            <div class=" container">
+                <div class="row detailPhoto">
+                    <span class="myClose2 iconfont" onclick="myClose2();">&#xe70a;</span>
+                </div>
+            </div> <!--DetailPhoto-->
+        </div>
+        <!-- 查看图片轮播-->
+        <div class="picBannerContainer">
+           <div class="container">
+               <div class="row picBanner">
+                   <span class="iconfont myClose3">&#xe70a;</span>
+                   <span class="iconfont left">&#xe667;</span>
+                   <img class="banner" src="../images/pic1.jpg"/>
+                   <span class="iconfont right">&#xe601;</span>
+               </div>
+           </div>
+        </div>
+
+        <!-- 删除图片弹框-->
+        <div class="deletaContainer">
+            <div class="container">
+                <div class="row deletePic">
+                    <div class="col-lg-4 col-md-4 col-sm-3 col-xs-2"></div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-8 createContent">
+                        <header>
+                            <span class="title">删除提醒</span>
+                            <span class="iconfont myClose4">&#xe70a;</span>
+                        </header>
+                            <p class="deleteAtt">确定要删除照片吗?</p>
+                            <p class="deleteBtn">确定</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3 col-xs-2"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+        document.write("<script src='../js/data.js'><\/script>");
+    </script>
+<script src="../js/photoWall.js"></script>
+</body>
+</html>

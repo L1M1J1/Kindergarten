@@ -1,0 +1,231 @@
+body{
+    background: rgba(255, 246, 246, 0.1);
+}
+p{
+    font-size: 1.75em;
+    margin-top: 5%;
+    margin-left: 12%;
+    color: white;
+
+}
+table{
+    border-collapse: collapse;
+    background-color: rgba(36,33,72,.6);
+    color: white;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 7%;
+}
+.div{
+    background-color: rgba(36,33,72,.6);
+    color: white;
+    width: 1054px;
+    height: 28px;
+    margin-left: 4%;
+}
+td{
+    border: 1px solid grey;
+}
+.colsTd{
+     width: 1050px;
+     height: 28px;
+}
+.firstTd{
+    width: 134px;
+    height: 28px;
+}
+.secondTd{
+    width: 731px;
+
+}
+.firstTd>span{
+    font-size: .813em;
+    margin-left: 30%;
+}
+.secondTd>span{
+    margin-left: 6%;
+    cursor: pointer;
+    font-size: 14px;
+}
+.thirdTd>span{
+    margin-left: 16%;
+    font-size: 14px;
+}
+.colsTd2{
+    height: 45px;
+}
+.colsTd2>span{
+    font-size: 20px;
+    margin-left: 1%;
+}
+.span0{
+    margin-left: 2%;
+    cursor: pointer;
+}
+.span1{
+    margin-left: 3%;
+    cursor: pointer;
+}
+.span2{
+    margin-left: 4%;
+    cursor: pointer;
+}
+.firstTd .span3{
+    margin-left: 2%;
+    font-size: 20px;
+}
+.firstTd .span4{
+    margin-left: 2%;
+
+}
+.span5{
+    margin-left: 60%;
+}
+.span6{
+    margin-left: 2%;
+}
+.span8{
+    cursor: pointer;
+}
+.span7{
+    display: none;
+    cursor: pointer;
+}
+.thirdTd{
+    width: 179px;
+}
+#emailD{
+    width: 40%;
+    height: 450px;
+    background-color:   rgba(36,33,72,1);
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    opacity: 0;
+    transition:all .3s linear;
+    z-index: -1;
+}
+#emailD>span{
+    color: white;
+    margin-left: 3%;
+    margin-top: 2%;
+    display: inline-block;
+    cursor: pointer;
+}
+#emailD>p{
+    color: grey;
+    font-size: 16px;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+#emailD .p2{
+    margin-top: 6%;
+    color: white;
+    font-size: 20px;
+}
+#emailD .p3{
+    width: 70%;
+    color: white;
+}
+#emailD .span10{
+    margin-left: 45%;
+
+}
+#search{
+    position: absolute;
+    right: 12%;
+    top:13%;
+    width: 250px;
+    /*outline: 1px solid green;*/
+}
+#search>button{
+    cursor: pointer;
+    color: #FFF6F6;
+    background-color: rgba(36,33,72,0.6);
+    width: 40px;
+    height: 32px;
+    border: 1px solid #FFF6F6;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    right: 8px;
+    top: 0;
+    font-size: 12px;
+}
+#search>input{
+    width: 200px;
+    height: 28px;
+    border: 1px solid #FFF6F6;
+    border-radius:4px 0 0 4px;
+    background-color: rgba(36,33,72,0.6);
+}
+#searchD{
+    width: 55%;
+    height: 200px;
+    background-color:   rgba(36,33,72,1);
+    position: absolute;
+    top: 16%;
+    left: 20%;
+    opacity: 0;
+    transition:all .3s linear;
+    z-index: -1;
+
+}
+#searchD>span{
+    color: white;
+    margin-left: 3%;
+    margin-top: 2%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#searchD tr:nth-of-type(1){
+    color: white;
+    position: absolute;
+    font-size: .813em;
+    line-height: 10px;
+    height: 10px;
+    top: 33%;
+}
+#searchD tr:nth-of-type(2){
+    color: white;
+    position: absolute;
+    top: 53%;
+    font-size: .813em;
+    line-height: 10px;
+    height: 10px;
+}
+tr.colsTr{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.divHead{
+    color: #FFF6F6;
+    /*outline: 1px solid green;*/
+    width: 80%;
+    position: absolute;
+    left: 13%;
+    top: 26%;
+    font-size: 15px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}

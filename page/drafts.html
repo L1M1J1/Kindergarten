@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" >
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/Inbox.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container-fluid">
+    <!--收件箱和搜索-->
+    <div class="row diYi">
+        <div class="one">
+            <p class="shoJ">草稿箱</p>
+        </div>
+        <div class="two">
+            <div class="input-group">
+            <input id="du" type="text" class="form-control" placeholder="search.." aria-describedby="basic-addon2">
+            <span class="input-group-addon iconfont" id="se">&#xe704;</span>
+            </div>
+        </div>
+    </div>
+    <!--收到的邮件-->
+    <div class="row diEr">
+       <div class="myTou">
+           <div class="zi1">删除</div>
+           <div class="zi2"><a href="outbox.html">转发</a></div>
+           <!--<div class="zi3">-->
+               <!--<select name=”address>-->
+                   <!--<option value="0" style="background-color: #242148;color: #fff6f6">-&#45;&#45;标记为-&#45;&#45;</option>-->
+                   <!--<option value="1" style="background-color: #242148;color: #fff6f6">星型标签</option>-->
+                   <!--<option id="qu" value="2" style="background-color: #242148;color: #fff6f6">取消星型</option>-->
+               <!--</select>-->
+           <!--</div>-->
+           <!--<div class="zi4">-->
+               <!--<select name=”address>-->
+                   <!--<option value="0" style="background-color: #242148;color: #fff6f6">-&#45;&#45;移动到-&#45;&#45;</option>-->
+                   <!--<option value="1" style="background-color: #242148;color: #fff6f6">收件箱</option>-->
+               <!--</select>-->
+           <!--</div>-->
+           <div class="zi5">下一页</div>
+           <div class="zi20">上一页</div>
+           <div class="zi6">末页</div>
+       </div>
+       <table class="myTable table-bordered" id="test_table">
+           <tr>
+               <td></td>
+               <td>发件人</td>
+               <td>主题</td>
+               <td>时间</td>
+               <td>收藏</td>
+           </tr>
+           <tr>
+               <td>&nbsp;&nbsp;<input type="checkbox" name="test">&nbsp;&nbsp;</td>
+               <td class="iconfont">&#xe635;&nbsp;&nbsp;张老师</td>
+               <td class="kaoZuo">&nbsp;&nbsp;&nbsp;&nbsp;关于幼儿园环境绿化以及种植小树苗活动的通知内容</td>
+               <td>2018.09.17</td>
+               <td class="yin tan"><div class="iconfont div">&#xe610;</div></td>
+           </tr>
+           <tr>
+               <td>&nbsp;&nbsp;<input type="checkbox" name="test">&nbsp;&nbsp;</td>
+               <td class="iconfont">&#xe635;&nbsp;&nbsp;张老师</td>
+               <td class="kaoZuo">&nbsp;&nbsp;&nbsp;&nbsp;关于幼儿园环境绿化以及种植小树苗活动的通知内容</td>
+               <td>2018.09.17</td>
+               <td class="yin1 tan"><div class="iconfont div1">&#xe610;</div></td>
+           </tr>
+           <tr>
+               <td>&nbsp;&nbsp;<input type="checkbox" name="test">&nbsp;&nbsp;</td>
+               <td class="iconfont">&#xe635;&nbsp;&nbsp;张老师</td>
+               <td class="kaoZuo">&nbsp;&nbsp;&nbsp;&nbsp;关于幼儿园环境绿化以及种植小树苗活动的通知内容</td>
+               <td>2018.09.17</td>
+               <td class="yin2 tan"><div class="iconfont div2">&#xe610;</div></td>
+           </tr>
+           <tr>
+               <td>&nbsp;&nbsp;<input type="checkbox" name="test">&nbsp;&nbsp;</td>
+               <td class="iconfont">&#xe635;&nbsp;&nbsp;张老师</td>
+               <td class="kaoZuo">&nbsp;&nbsp;&nbsp;&nbsp;关于幼儿园环境绿化以及种植小树苗活动的通知内容</td>
+               <td>2018.09.17</td>
+               <td class="yin3 tan"><div class="iconfont div3">&#xe610;</div></td>
+           </tr>
+           <tr>
+               <td>&nbsp;&nbsp;<input type="checkbox" name="test">&nbsp;&nbsp;</td>
+               <td class="iconfont">&#xe635;&nbsp;&nbsp;张老师</td>
+               <td class="kaoZuo">&nbsp;&nbsp;&nbsp;&nbsp;关于幼儿园环境绿化以及种植小树苗活动的通知内容</td>
+               <td>2018.09.17</td>
+               <td class="yin4 tan"><div class="iconfont div4">&#xe610;</div></td>
+           </tr>
+           <!--<tr>-->
+               <!--<td><input type="checkbox" name="test"></td>-->
+               <!--<td class="iconfont">&#xe635;&nbsp;&nbsp;张老师</td>-->
+               <!--<td class="kaoZuo">&nbsp;&nbsp;&nbsp;&nbsp;关于幼儿园环境绿化以及种植小树苗活动的通知内容</td>-->
+               <!--<td>2018.09.17</td>-->
+               <!--<td class="yin5"><div class="iconfont div5">&#xe610;</div></td>-->
+           <!--</tr>-->
+           <!--<tr>-->
+               <!--<td><input type="checkbox" name="test"></td>-->
+               <!--<td class="iconfont">&#xe635;&nbsp;&nbsp;张老师</td>-->
+               <!--<td class="kaoZuo">&nbsp;&nbsp;&nbsp;&nbsp;关于幼儿园环境绿化以及种植小树苗活动的通知内容</td>-->
+               <!--<td>2018.09.17</td>-->
+               <!--<td class="yin6"><div class="iconfont div6">&#xe610;</div></td>-->
+           <!--</tr>-->
+       </table>
+    </div>
+    <!--打开的邮件-->
+    <!--<div class="row diSi" id="111">-->
+        <div class="beiJin">
+            <div class="row diWu">
+                <div class="zi7">返回</div>
+                <div class="zi8">回复</div>
+                <div class="zi9">删除</div>
+                <div class="zi10">上一封</div>
+                <div class="zi11">下一封</div>
+            </div>
+            <div class="row diLiu">
+                <div class="zi12"><b>发件人：李老师</b></div>
+            </div>
+            <div class="row diQi">
+                <div class="zi12">时间：2018.09.07</div>
+            </div>
+            <div class="row diBa">
+                <div class="zi12">收件人：何老师</div>
+            </div>
+            <div class="row diJiu">
+                <div class="zi13">&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    雨后初晴，阳光明媚。看一眼美玉般剔透的蓝空，听几声长调般悠扬的鸟鸣，心情瞬间大好。趁兴，到校园里走一遭。感受初秋的凉意，呼
+
+                    　　吸新鲜的空气，更想体味草木芬芳的诗意。<br>
+
+                    　　悠闲漫步，便也惊喜地发现，那些各自孤立而彼此多情的草木，是率性而作的一首首诗，亦是天然自成的一阙阙词。<br>
+
+                    　　最大气而洋洋洒洒般尽兴挥就的，是广场中央歌行体的国槐。两列齐整的槐，身形挺拔，姿态华美。一出口，便对仗工整。那绿，也是浓墨<br>
+
+                    　　重彩，浑然天成。绿得含意深远，绿得韵味实足。风霜雨露，凝结其中；日月光华，暗含于内。在这苍茫的尘世间，那槐，绿得淋漓尽致，<br>
+
+                    　　相距不远的草坪里，散落着青绿的矮松，是那乐府民歌吧。可是，无需风吹，那连结成片的荒草，以更低矮的姿态，匍匐在矮松的脚下。做
+                </div>
+            </div>
+        </div>
+    <!--</div>-->
+</div>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/Inbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+/*页面背景*/
+body{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.container_all{
+    overflow: hidden;
+}
+/*标题*/
+.Jurisdiction{
+    color: #fff6f6;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.Jurisdiction_all{
+    margin-left: 10%;
+}
+/*添加人员按钮*/
+.btn-default{
+    background-color: #242148;
+    color: #fff6f6;
+}
+.btn-default:hover{
+    background-color:rgb(40,96,144);
+    color: #fff6f6;
+}
+/*表格*/
+table{
+    text-align: center;
+    background-color: rgba(36, 33, 72, 0.60);
+    color: #fff6f6;
+}
+.setJur{
+    cursor: pointer;
+}
+/*模态框*/
+.btn-primary{
+    background-color: #242148;
+    border-color: #242148;
+    color: #fff6f6;
+}
+/*模态框颜色*/
+.modal-content{
+    background-color: #242148;
+    color: #fff6f6;
+}
+.tea_mas{
+    margin-top: 2%;
+}
+.Jur_teacher{
+    float: left;
+    width: 43%;
+}
+.Jur_teacher>div{
+    margin-left: 30px;
+}
+.jiantou{
+    float: left;
+    width: 15%;
+    margin-top: 15%;
+    padding-left: 6%;
+}
+.jiantou p{
+    cursor: pointer;
+    font-size: 22px;
+}
+.master{
+    float: left;
+    width: 42%;
+    border:1px solid #242148;
+}
+.modal-footer{
+    clear: both;
+}
+@media screen and (min-width: 1200px){
+    .Jurisdiction h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px){
+    .Jurisdiction h1{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 767px){
+    .Jurisdiction h1{
+        font-size: 20px;
+    }
+}
+.setColor{
+    color: #FFF6F6;
+    margin-top: 8px;
+    text-align: right;
+}
+.search_form{
+    width: 110%;
+    margin-left: -16%;
+    border: none;
+    border-radius: 0;
+}
+.hehe{
+    border: none;
+}
+.name,.job,.department,.Jur_self{
+    float: right;
+    width: 80%;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+.modal-body>label{
+    float: left;
+    display: inline-block;
+    width: 15%;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}

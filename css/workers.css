@@ -1,0 +1,78 @@
+ select {
+     background-color: rgba(36,33,72,.6);
+ }
+
+.workadd {
+    background-color: #3C3458;
+    color: #fff6f6;
+    font-size: 13px;
+    margin-top: -194px;
+    padding: 50px 0 30px 120px;
+   display: none;
+}
+
+#workadd3 {
+    padding: 50px 0 30px 86px;
+}
+
+#workadd7 {
+    padding: 50px 0 30px 86px;
+}
+
+ .workadd input {
+     height: 20px;
+     width: 50%;
+     margin-left: 20px;
+     border:0;
+     color: #333;
+ }
+
+
+
+ .wordbtn {
+     text-align: right;
+     padding-right: 72px;
+     padding-top: 18px;
+ }
+
+
+ .pad {
+     margin-bottom: 10px;
+ }
+.pad p {
+    display: inline-block;
+}
+
+ .pad p+p   {
+    margin-left: 140px;
+ }
+ .pad .padmargin {
+     margin-left: 123px;
+ }
+.pad .padmg {
+    margin-left: 110px;
+}
+.padding {
+    padding-left: 28px;
+}
+ ::-webkit-scrollbar {
+     width: 5px;
+     height: 5px;
+ }
+ ::-webkit-scrollbar-thumb{
+     background-color: rgba(255, 246, 246, 0.31);
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+ }
+ ::-webkit-scrollbar-thumb:vertical:hover{
+     background-color: #666;
+ }
+ ::-webkit-scrollbar-thumb:vertical:active{
+     background-color: #333;
+ }
+ ::-webkit-scrollbar-button{
+     display: none;
+ }
+ ::-webkit-scrollbar-track{
+     background-color: #242148;
+ }

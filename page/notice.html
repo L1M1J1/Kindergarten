@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/section.css">
+    <link rel="stylesheet" href="../css/notice.css">
+</head>
+<body>
+<!--职工管理-->
+<section>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1" >
+                <!--邮件公告操作-->
+                <div class="operation">
+                    <span>公告</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-1">
+               <div class="titles clearfix" id="holi">
+                   <p class="pull-left">&nbsp;·&nbsp;关于清明放假通知</p>
+                   <p class="pull-right">[2018-9-30]</p>
+               </div>
+                <div class="titles clearfix">
+                    <p class="pull-left">&nbsp;·&nbsp;和衷共济&nbsp;&nbsp;共建美好家园</p>
+                    <p class="pull-right">[2018-9-29]</p>
+                </div>
+                <div class="titles clearfix">
+                    <p class="pull-left">&nbsp;·&nbsp;和衷共济&nbsp;&nbsp;共建美好家园</p>
+                    <p class="pull-right">[2018-9-29]</p>
+                </div>
+                <div class="titles clearfix">
+                    <p class="pull-left">&nbsp;·&nbsp;和衷共济&nbsp;&nbsp;共建美好家园</p>
+                    <p class="pull-right">[2018-9-29]</p>
+                </div>
+                <div class="titles clearfix">
+                    <p class="pull-left">&nbsp;·&nbsp;和衷共济&nbsp;&nbsp;共建美好家园</p>
+                    <p class="pull-right">[2018-9-29]</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-1">
+                <div class="holiday">
+                    <p class="text-center" >关于国庆节放假通知</p>
+                    <p class="text-right">发表日期：2018-9-30</p>
+                    <div>
+                    <p>2018国庆节假期将至，根据国家节假日放假规定，我园国庆节放假安排<br>如下：</p>
+                    <p>10月1日至7日放假共7天；10月8日(星期一)上班。节假日期间外出游玩请<br>注意安全！</p>
+                    <p>近期为手足口流行病高发期，请家长尽量不要带孩子到人口密集的游乐场<br>所游玩。</p>
+                    </div>
+                    <div class="text-right">
+                    <button class="button">返回</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $(function () {
+       $("#holi").click(function () {
+          $(".holiday").show();
+       });
+        $(".holiday button").click(function () {
+            $(".holiday").hide();
+        });
+    });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>出勤情况</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="shortcut icon" href="../images/logoko1.png">-->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Attendance.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container_all">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 Attendance">
+                <h1>出勤情况</h1>
+            </div>
+            <div class="Attendance_chioces">
+                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                    <p>时间范围</p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+                    <p>昨天</p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+                    <p>本周</p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+                    <p>本月</p>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+                    <p>上月</p>
+                </div>
+                <div class="col-sm-2 col-xs-7">
+                    <input type="date" class="form-control" id="inputEmail3" placeholder="请输入开始时间">
+                </div>
+                <div class="col-sm-2 col-xs-7">
+                    <input type="date" class="form-control"  placeholder="请输入结束时间">
+                </div>
+            </div>
+            <div class="Attendance_chioces col-lg-10 col-md-10 col-sm-12 ">
+                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                    <p>状态：</p>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-4">
+                    <p>全部</p>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-4">
+                    <p>正常</p>
+                </div>
+                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-4">
+                    <p>异常</p>
+                </div>
+            </div>
+
+            <div class="Attendance_chioces col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12">
+                    <p>职位：</p>
+                </div>
+                <div class=" col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                    <select class="form-control select_form">
+                        <option>院长</option>
+                        <option>院长助理</option>
+                        <option>老师</option>
+                        <option>学生</option>
+                    </select>
+                </div>
+            </div>
+            <!--表格-->
+            <div class="col-lg-9 Attendance">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>时间</td>
+                        <td>姓名</td>
+                        <td>上班时间</td>
+                        <td>下班时间</td>
+                        <td>状态</td>
+                        <td>职位</td>
+                        <td>部门</td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+            <div class="col-lg-offset-5 col-md-offset-5 col-sm-offset-5 col-xs-offset-5 col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                <p>显示7/1120个结果</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/Attendance.js"></script>
+</body>
+</html>

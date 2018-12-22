@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--></head>
+<link rel="stylesheet" href="../css/iconfont.css"/>
+<link rel="stylesheet" href="../css/banjiguanli.css"/>
+<body>
+<div class="table-responsive">
+    <div>
+        <span class="zi">班级管理</span>
+        <span class="zi1">增加</span>
+        <input type="text" value="search..." id="shousuo"/>
+        <span class="iconfont shousuo1">&#xe704;</span>
+    </div>
+    <table class="table table-bordered1">
+        <thead>
+        <tr>
+            <th>班级编号</th>
+            <th>班级名称</th>
+            <th>班级类型</th>
+            <th>开班时间</th>
+            <th>主班老师</th>
+            <th>副班老师</th>
+            <th>生活老师</th>
+            <th>班级人数</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody class="hou">
+        <tr>
+            <th scope="row">1</th>
+            <td id="tr-5">朵朵班</td>
+            <td id="tr-4">小班</td>
+            <td>2018.09.13</td>
+            <td id="tr-6">王小七</td>
+            <td id="tr-3">李小六</td>
+            <td id="tr-2">张小五</td>
+            <td id="tr-1">18</td>
+            <td>
+                <span class="xian1">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2">查看</span>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td id="tr-5-1">苗苗班</td>
+            <td id="tr-4-1">小班</td>
+            <td>2018.09.13</td>
+            <td id="tr-6-1">花大姐</td>
+            <td id="tr-3-1">士大夫</td>
+            <td id="tr-2-1">黄金科</td>
+            <td id="tr-1-1">20</td>
+            <td>
+                <span class="xian1-1">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2-1">查看</span>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td id="tr-5-2">花花班</td>
+            <td id="tr-4-2">小班</td>
+            <td>2018.09.13</td>
+            <td id="tr-6-2">章子怡</td>
+            <td id="tr-3-2">刘德华</td>
+            <td id="tr-2-2">成龙</td>
+            <td id="tr-1-2">24</td>
+            <td>
+                <span class="xian1-2">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2-2">查看</span></td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td id="tr-5-3">袋鼠班</td>
+            <td id="tr-4-3">中班</td>
+            <td>2019.09.13</td>
+            <td id="tr-6-3">大卫</td>
+            <td id="tr-3-3">汤姆</td>
+            <td id="tr-2-3">周星驰</td>
+            <td id="tr-1-3">26</td>
+            <td>
+                <span class="xian1-3">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2-3">查看</span></td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td id="tr-5-4">小鹿班</td>
+            <td id="tr-4-4">中班</td>
+            <td>2019.09.13</td>
+            <td id="tr-6-4">何冰</td>
+            <td id="tr-3-4">福德强</td>
+            <td id="tr-2-4">周瑞发</td>
+            <td id="tr-1-4">25</td>
+            <td>
+                <span class="xian1-4">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2-4">查看</span></td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td id="tr-5-5">大象班</td>
+            <td id="tr-4-5">中班</td>
+            <td>2019.09.13</td>
+            <td id="tr-6-5">刘亦菲</td>
+            <td id="tr-3-5">黄晓明</td>
+            <td id="tr-2-5">鹿晗</td>
+            <td id="tr-1-5">28</td>
+            <td>
+                <span class="xian1-5">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2-5">查看</span>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td id="tr-5-6">海豚班</td>
+            <td id="tr-4-6">大班</td>
+            <td>2020.09.13</td>
+            <td id="tr-6-6">刘亦</td>
+            <td id="tr-3-6">黄晓</td>
+            <td id="tr-2-6">鹿军</td>
+            <td id="tr-1-6">32</td>
+            <td>
+                <span class="xian1-6">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2-6">查看</span>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td id="tr-5-7">章鱼班</td>
+            <td id="tr-4-7">大班</td>
+            <td>2020.09.13</td>
+            <td id="tr-6-7">程晓</td>
+            <td id="tr-3-7">许文强</td>
+            <td id="tr-2-7">孙悟空</td>
+            <td id="tr-1-7">34</td>
+            <td>
+                <span class="xian1-7">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2-7">查看</span>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td id="tr-5-8">水母班</td>
+            <td id="tr-4-8">大班</td>
+            <td>2020.09.13</td>
+            <td id="tr-6-8">东海龙王</td>
+            <td id="tr-3-8">侠市</td>
+            <td id="tr-2-8">曾雪</td>
+            <td id="tr-1-8">30</td>
+            <td>
+                <span class="xian1-8">编辑</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="xian2-8">查看</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="bg-8">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30" value="朵朵班"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-8">
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren-8" placeholder="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30" value="李欣"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-8" size="30"  placeholder="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-8 " size="30" placeholder="输入生活老师姓名" />
+    </div>
+    <div class="anniu juz">
+        <button class="btn1">取消</button>
+        <button class="btn2-8">确定</button>
+    </div>
+</div>
+<div id="bg-7">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-7">
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren-7" value="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-7" size="30"  value="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-7 " size="30" value="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2-7">确定</button>
+    </div>
+</div>
+<div id="bg-6">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-6">
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren-6" placeholder="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-6" size="30"  placeholder="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-6 " size="30" placeholder="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2-6">确定</button>
+    </div>
+</div>
+<div id="bg-5">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-5">
+            <option>中班</option>
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren-5" placeholder="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-5" size="30"  placeholder="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-5 " size="30" placeholder="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2-5">确定</button>
+    </div>
+</div>
+<div id="bg-4">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-4">
+            <option>中班</option>
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren-4" placeholder="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-4" size="30"  placeholder="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-4 " size="30" placeholder="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2-4">确定</button>
+    </div>
+</div>
+<div id="bg-3">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-3">
+            <option>中班</option>
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren-3" placeholder="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-3" size="30"  placeholder="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-3" size="30" placeholder="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2-3">确定</button>
+    </div>
+</div>
+<div id="bg-2">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-2">
+            <option>小班</option>
+            <option>中班</option>
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren-2" value="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-2" size="30"  value="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-2 " size="30" value="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2-2">确定</button>
+    </div>
+</div>
+<div id="bg-1">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+         <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-1">
+            <option>小班</option>
+            <option>中班</option>
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren-1" value="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-1" size="30"  value="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-1" size="30" value="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2-1">确定</button>
+    </div>
+</div>
+<div id="bg">
+    <div class="zhuti">
+        <span class="zhuti-1">编辑班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1">
+            <option>小班</option>
+            <option>中班</option>
+            <option>大班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">班级人数:</span>
+        <input type="text" class="disabled ren" value="输入班级新人数" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1" size="30"  value="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2 " size="30" value="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2">确定</button>
+    </div>
+</div>
+<div id="bg1">
+    <div class="zhuti">
+        <span class="zhuti-1-1">查看班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong1">班级名称&nbsp;:</span>
+        <span class="chakan chakan-1 chakan-2 chakan-3 chakan-4 chakan-5
+        chakan-6 chakan-7 chakan-8"></span>
+    </div>
+    <div class="shenban">
+        <span class="zong1">班级类型&nbsp;:</span>
+        <span class="chakan1 chakan1-1 chakan1-2 chakan1-3 chakan1-4 chakan1-5
+        chakan1-6 chakan1-7 chakan1-8"></span>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong1">班级人数&nbsp;:</span>
+        <span class="chakan2 chakan2-1 chakan2-2 chakan2-3 chakan2-4 chakan2-5 chakan2-6
+        chakan2-7 chakan2-8"></span>
+    </div>
+    <div class="mingchen1">
+        <span class="zong1">主班老师&nbsp;:</span>
+        <span class="chakan3 chakan3-1 chakan3-2 chakan3-3 chakan3-4 chakan3-5
+        chakan3-6 chakan3-7 chakan3-8"></span>
+    </div>
+    <div class="mingchen2">
+        <span class="zong1">副班老师&nbsp;:</span>
+        <span class="chakan4 chakan4-1 chakan4-2 chakan4-3 chakan4-4 chakan4-5
+        chakan4-6 chakan4-7 chakan4-8"></span>
+    </div>
+    <div class="mingchen3">
+        <span class="zong1">生活老师&nbsp;:</span>
+        <span class="chakan5 chakan5-1 chakan5-2 chakan5-3 chakan5-4 chakan5-5
+        chakan5-6 chakan5-7 chakan5-8"></span>
+    </div>
+</div>
+<div id="bg-9">
+    <div class="zhuti">
+        <span class="zhuti-1">新增班级信息</span>
+        <span class="iconfont zhuti-2">&#xe70a;</span>
+    </div>
+    <div class="mingchen">
+        <span class="zong">班级名称:</span>
+        <input type="text"  class="disabled ren-x" size="30" value="输入班级名称"/>
+    </div>
+    <div class="shenban">
+        <span class="zong">升班类型:</span>
+        <select  class="shenban-1-9">
+            <option>小班</option>
+        </select>
+    </div>
+    <div class="banjirenshu">
+        <span class="zong">开班时间:</span>
+        <input type="text" class="disabled ren-9" value="年/月/日" />
+    </div>
+    <div class="mingchen1">
+        <span class="zong">主班老师:</span>
+        <input type="text" disabled class="disabled" size="30"/>
+    </div>
+    <div class="mingchen2">
+        <span class="zong">副班老师:</span>
+        <input type="text" class="disabled ren1-9" size="30"  value="输入副班老师姓名" />
+    </div>
+    <div class="mingchen3">
+        <span class="zong">生活老师:</span>
+        <input type="text" class="disabled ren2-9 " size="30" value="输入生活老师姓名" />
+    </div>
+    <div class="anniu">
+        <button class="btn1">取消</button>
+        <button class="btn2-9">确定</button>
+    </div>
+</div>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/banjiguanli.js"></script>
+<script>
+    $(".btn2-9").click(function(){
+        var addtr=$("<tr>"+ "<th >10</th>"+"<td>"+$(".ren-x").val()+"</td>"+
+        "<td>小班</td>"+"<td>"+$(".ren-9").val()+"</td>"+"<td>李小六</td>"+"<td>" +
+        ""+$(".ren1-9").val()+"</td>"+"<td>"+$(".ren2-9").val()+"</td>"+
+        "<td>20</td>"+"<td>编辑&nbsp;&nbsp;&nbsp;&nbsp;查看 </td>"+"</tr>");
+        addtr.appendTo($(".hou"));
+        $("#bg-9").css("display","none");
+    });
+    $(".zi1").click(function(){
+        $("#bg-9").css("display","block");
+    })
+</script>
+</body>
+</html>

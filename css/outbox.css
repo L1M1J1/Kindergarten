@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(255,255,255,.1);
+}
+/*.container-fluid{*/
+    /*background-color: rgba(255,255,255,.1);*/
+/*}*/
+/*收件箱和搜索*/
+.diYi{
+    position: relative;
+    top: 60px;
+}
+.one{
+    position: absolute;
+    font-size: 1.75em;
+    left: 15%;
+}
+.shoJ{
+    color: #fff6f6;
+}
+/*收件人*/
+.diEr{
+    height: 31px;
+    line-height: 31px;
+    font-size: 0.875em;
+    position: relative;
+    top: 130px;
+}
+.two{
+    position: absolute;
+    left: 19%;
+}
+.three{
+    position: absolute;
+    left: 25%;
+}
+input{
+    width: 570px;
+    height: 29px;
+}
+/*主题*/
+.diSi{
+    height: 31px;
+    line-height: 31px;
+    font-size: 0.875em;
+    position: relative;
+    top: 150px;
+}
+.four{
+    position: absolute;
+    left: 20%;
+}
+.five{
+    position: absolute;
+    left: 25%;
+}
+/*内容*/
+.diWu{
+    font-size: 0.875em;
+    position: relative;
+    top: 170px;
+}
+.six{
+    color: #fff6f6;
+}
+/*按钮*/
+.diQi{
+    font-size: 0.875em;
+    position: relative;
+    top: 410px;
+}
+.anNiu1{
+    width: 84px;
+    height: 28px;
+    text-align: center;
+    color: #fff6f6;
+    background-color: rgba(36,33,72,.6);
+    border-radius: 5px;
+    line-height: 28px;
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+}
+.anNiu2{
+    width: 84px;
+    height: 28px;
+    text-align: center;
+    color: #fff6f6;
+    background-color: rgba(36,33,72,.6);
+    border-radius: 5px;
+    line-height: 28px;
+    position: absolute;
+    left: 57.5%;
+    cursor: pointer;
+}
+.anNiu3{
+    width: 57px;
+    height: 28px;
+    text-align: center;
+    color: #fff6f6;
+    background-color: rgba(36,33,72,.6);
+    border-radius: 5px;
+    line-height: 28px;
+    position: absolute;
+    left: 65%;
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}

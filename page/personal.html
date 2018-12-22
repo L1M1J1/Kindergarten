@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>personal</title>
+    <link rel="stylesheet" href="../css/personalCss.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+</head>
+<body>
+<p>
+    <span>基本资料</span>
+    <span class="buttonSpan">修改</span>
+</p>
+<table>
+    <tr>
+        <td class="firstTd">姓名</td>
+        <td class="secondTd thirdTd">何东</td>
+        <td class="firstTd">出生年月</td>
+        <td class="secondTd">1993.09</td>
+    </tr>
+    <tr>
+        <td class="firstTd">性别</td>
+        <td class="secondTd thirdTd">男</td>
+        <td class="firstTd">联系方式</td>
+        <td class="secondTd">18728374923</td>
+    </tr>
+    <tr>
+        <td class="firstTd">年龄</td>
+        <td class="secondTd thirdTd">25</td>
+        <td class="firstTd">通讯地址</td>
+        <td class="secondTd">成都市高新区天府软件园</td>
+    </tr>
+    <tr>
+        <td class="firstTd">职位</td>
+        <td class="secondTd thirdTd">管理员</td>
+        <td class="firstTd">邮箱</td>
+        <td class="secondTd">1231238@qq.com</td>
+    </tr>
+</table>
+<p>
+    <span>出勤情况</span>
+</p>
+<table>
+    <tr>
+        <td>状态</td>
+        <td>今天</td>
+        <td>昨天</td>
+        <td>上周</td>
+        <td>本月</td>
+        <td>上月</td>
+    </tr>
+    <tr>
+        <td>异常</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>正常</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+</table>
+<div id="fromD">
+    <p id="h2">
+        <span>信息修改</span>
+    </p>
+    <div class="firstD">
+        <label for="fromD">姓名：</label>
+        <input type="text" readonly value="何东" class="textInput">
+    </div>
+    <div class="secondD" >
+    <label for="fromD">性别：</label>
+    <input type="radio" name="sex" checked value="男" readonly><label for="fromD">男</label>
+    <input type="radio" name="sex" value="女" readonly><label for="fromD">女</label>
+    </div>
+    <div>
+        <label for="fromD">年龄：</label>
+        <input type="text" readonly value="25" class="textInput">
+    </div>
+    <div>
+        <label for="fromD">职位：</label>
+        <input type="text" readonly value="管理员" class="textInput">
+    </div>
+    <div>
+
+    <label for="fromD">出生年月：</label>
+    <input type="text" readonly value="1993.09" class="textInput">
+    </div>
+    <div>
+        <label for="fromD">联系方式：</label>
+        <input type="text"  value="18728374923" class="textInput">
+    </div>
+    <div>
+        <label for="fromD">通讯地址：</label>
+        <input type="text"  value="成都市高新区天府软件园" class="textInput">
+    </div>
+    <div>
+        <label for="fromD">邮箱：</label>
+        <input type="email"  value="1231238@qq.com" class="textInput">
+    </div>
+    <p id="buttonD">确认修改</p>
+
+    <div class="con4">
+        <canvas id="cvs" width="100" height="100"></canvas>
+        <span class="btn upload">上传头像<input type="file" class="upload_pic" id="upload" /></span>
+    </div>
+    <div id="clearD" class="iconfont">&#xe70a;</div>
+</div>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/personalJs.js"></script>
+</body>
+</html>

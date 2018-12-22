@@ -1,0 +1,89 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: rgba(178, 185, 196, 0.1);
+}
+.one{
+    position: absolute;
+    left:10%;
+    top: 5%;
+}
+.one span{
+    color: #FFF6F6;
+    font-size: 26px;
+}
+.bg{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    left: 24%;
+    top: 13%;
+}
+.zi1{
+    font-size:0.875em;
+    color: #FFF6F6;
+    position: absolute;
+    left: -8%;
+    top: 1%;
+}
+.zi2{
+    font-size:0.875em;
+    color: #FFF6F6;
+    position: absolute;
+    left: -11%;
+    top: 11%;
+}
+.zi3{
+    font-size:0.875em;
+    color: #FFF6F6;
+    position: absolute;
+    left: -8%;
+    top: 20%;
+}
+input{
+    height: 31px;
+}
+button{
+    background-color: #242148;
+    border:none;
+    width: 57px;
+    height: 28px;
+    border-radius: 5px;
+    position: absolute;
+    left: 67%;
+    top: 72%;
+}
+.bg>button:last-child{
+    margin-top: 2%;
+}
+.fasong {
+    color: #FFF6F6;
+}
+#upFile{
+    position: absolute;
+    /*left: 68%;*/
+    top: 10%;
+    color: #FFF6F6;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}

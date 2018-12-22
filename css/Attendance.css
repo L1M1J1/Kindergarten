@@ -1,0 +1,78 @@
+/*页面背景*/
+body{
+    background-color: rgba(255, 246, 246, 0.1);
+}
+.container_all{
+    overflow: hidden;
+}
+.container_all p{
+    color: #FFF6F6;
+}
+/*标题*/
+.Attendance{
+    color: #fff6f6;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+.Attendance_chioces{
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.select_form{
+    border: none;
+    border-radius: 0;
+}
+.col-xs-7 input{
+    border: none;
+    border-radius: 0;
+}
+.col-lg-1{
+    color: #242148;
+}
+.col-lg-1:hover{
+    color: black;
+    cursor: pointer;
+}
+/*表格*/
+.table{
+    background-color: rgba(36, 33, 72, 0.6);
+    text-align: center;
+}
+@media screen and (min-width: 1200px){
+    .Attendance h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px){
+    .Attendance h1{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 767px){
+    .Attendance h1{
+        font-size: 20px;
+    }
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 246, 246, 0.31);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:vertical:hover{
+    background-color: #666;
+}
+::-webkit-scrollbar-thumb:vertical:active{
+    background-color: #333;
+}
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar-track{
+    background-color: #242148;
+}

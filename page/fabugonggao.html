@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--></head>
+<link rel="stylesheet" href="../css/fabu.css"/>
+<body>
+
+ <div class="one">
+     <span>发布公告</span>
+ </div>
+<div class="bg">
+    <span class="zi1">题目:</span>
+    <input type="text" size="70"/>
+    <br/><br/>
+    <span class="zi2">添加文件:</span>
+    <!--<input type="text" class="fileName" size="62"/>-->
+    <!--<button class="tian"><span class="fasong">+</span></button>-->
+    <input type="file" class="tian" id="upFile"><span class="fasong">+</span></input>
+    <br/><br/>
+    <span class="zi3">内容:</span>
+    <textarea name="" id="" cols="72" rows="12"></textarea>
+    <button><span class="fasong">发布</span></button>
+</div>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+ <script>
+     $("#upFile").change(function(){
+//         console.log($("#upFile")[0].files);
+         $(".fileName").val($("#upFile")[0].files);
+     });
+ </script>
+</body>
+</html>

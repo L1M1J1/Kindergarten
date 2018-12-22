@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/section.css">
+</head>
+<body>
+<!--部门管理-->
+<section>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-10 col-lg-offset-1">
+                <!--部门管理操作-->
+                <div class="operation">
+                    <span>部门管理</span>
+                    <a  id="btn1" href="#">增加</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-lg-offset-1">
+                <table class="table table-bordered">
+                    <tr>
+                        <td></td>
+                        <td>部门名称</td>
+                        <td>负责人</td>
+                        <td>描述</td>
+                        <td>人数</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="test">
+                        </td>
+                        <td class="bumen">园长办公室</td>
+                        <td class="xinming">李保国</td>
+                        <td class="miaoshu">负责本园的日常工作</td>
+                        <td class="renshu">1</td>
+                        <td>
+                            <a href="#"  class="chankan">查看</a>
+                            <a href="#"  class="bianji">编辑</a>
+                            <a href="#" class="del">删除</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="test">
+                        </td>
+                        <td class="bumen1">教学部</td>
+                        <td class="xinming1">林梦</td>
+                        <td class="miaoshu1">负责本园的教学工作</td>
+                        <td class="renshu1">10</td>
+                        <td>
+                            <a href="#" class="chakan1">查看</a>
+                            <a href="#" class="bianji1">编辑</a>
+                            <a href="#" class="del">删除</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <!--增加-->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 ">
+                <div class="add" id="add1">
+                    <from>
+                        <p>
+                            <label for="">部门名称：</label>
+                            <input id="bumen1"  type="text" placeholder="请输入部门名称">
+                       </p>
+                        <p>
+                            <label for="">部门描述：</label>
+                            <input id="bumen2"  type="text" placeholder="请输入部门描述">
+                        </p>
+                        <p>
+                            <label for="">部门负责人:</label>
+                            <input id="bumen3"  type="text" placeholder="请输入部门负责人">
+                        </p>
+                    <div class="bttn">
+                        <button class="button" id="quxiao1">取消</button>
+                        <button class="button" id="xinzen1" >新增</button>
+                    </div>
+                    </from>
+
+                </div>
+            </div>
+        </div>
+        <!--编辑-->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 ">
+                <!--第一个-->
+                <div class="add" id="add2">
+                    <from>
+                        <p>
+                            <label for="">部门名称：</label>
+                            <input class="bumenname" type="text" placeholder="请输入部门名称">
+                        </p>
+                        <p>
+                            <label for="">部门描述：</label>
+                            <input class="bumenmiaoshu" type="text" placeholder="请输入部门描述">
+                        </p>
+                        <p>
+                            <label for="">部门负责人:</label>
+                            <input class="bumenxinming" type="text" placeholder="请输入部门负责人">
+                        </p>
+                        <div class="bttn">
+                            <button class="button" id="quxiao2">取消</button>
+                            <button class="button btn6">确定</button>
+                        </div>
+                    </from>
+
+                </div>
+                <!--第二个-->
+                <div class="adds1 ">
+                    <from>
+                        <p>
+                            <label for="">部门名称：</label>
+                            <input class="bumenname1" type="text" placeholder="请输入部门名称">
+                        </p>
+                        <p>
+                            <label for="">部门描述：</label>
+                            <input class="bumenmiaoshu1" type="text" placeholder="请输入部门描述">
+                        </p>
+                        <p>
+                            <label for="">部门负责人:</label>
+                            <input class="bumenxinming1" type="text" placeholder="请输入部门负责人">
+                        </p>
+                        <div class="bttn">
+                            <button class="button bttn1" >取消</button>
+                            <button class="button bttn2">确定</button>
+                        </div>
+                    </from>
+
+                </div>
+            </div>
+        </div>
+        <!--查看-->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 ">
+                <!--第一个-->
+                <div class="see">
+                    <p>
+                        <span>部门名称：</span>
+                        <span class="yZhang">园长办公室</span>
+                    </p>
+                    <p>
+                        <span>负责人：</span>
+                        <span class="xMing"></span>
+                    </p>
+                    <p>
+                        <span>描述：</span>
+                        <span class="mShu"></span>
+                    </p>
+                    <p>
+                        <span>人数：</span>
+                        <span class="rShu"></span>
+                    </p>
+                    <div class="re">
+                        <button class="button" id="queding">确定</button>
+                    </div>
+                </div>
+                <!--第二个-->
+                <div class="see1">
+                    <p>
+                        <span>部门名称：</span>
+                        <span class="yZhang1">园长办公室</span>
+                    </p>
+                    <p>
+                        <span>负责人：</span>
+                        <span class="xMing1"></span>
+                    </p>
+                    <p>
+                        <span>描述：</span>
+                        <span class="mShu1"></span>
+                    </p>
+                    <p>
+                        <span>人数：</span>
+                        <span class="rShu1"></span>
+                    </p>
+                    <div class="re">
+                        <button class="button queding1">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script>
+    $(function(){
+        // 增加
+        $("#btn1").click(function(){
+            $("#add1").show();
+            return false;
+        });
+        $("#quxiao1").click(function(){
+            $("#add1").hide();
+        });
+        $("#xinzen1").click(function(){
+            $("#add1").hide();
+            //收集输入的数据
+            var $bumen=$("#bumen1");
+            var $miaoshu=$("#bumen2");
+            var $fuzeren=$("#bumen3");
+            var bumen=$bumen.val();
+            var miaoshu=$miaoshu.val();
+            var fuzeren=$fuzeren.val();
+            //添加到表格中
+            $("<tr></tr>")
+                .append("<td><input type='checkbox'></td>")
+                .append("<td>"+bumen+"</td>")
+                .append("<td>"+fuzeren+"</td>")
+                .append("<td>"+miaoshu+"</td>")
+                .append("<td>3</td>")
+                .append("<td><a href='#' class='chankan1'>查看</a><a href='#' class='bianji1'>编辑</a><a href='#' class='del'>删除</a></td>")
+                .appendTo("table>tbody");
+            //清除输入
+            $bumen.val("");
+            $miaoshu.val("");
+            $fuzeren.val("");
+        });
+
+
+        // 第一个
+        //编辑
+        $(".bianji").click(function(){
+           $("#add2").show();
+            return false;
+        });
+        $("#quxiao2").click(function(){
+            $("#add2").hide();
+        });
+        // 第二个
+      $(".bianji1").click(function () {
+          $(".adds1").show();
+          return false;
+      });
+      $(".bttn1").click(function(){
+          $(".adds1").hide();
+      });
+        $(".bttn2").click(function(){
+            var bumen=$(".bumen1");
+            // console.log(bumen.text());
+            var miaoshu=$(".miaoshu1");
+            var xinming=$(".xinming1");
+            var bumenname=$(".bumenname1");
+            var bumenmiaoshu=$(".bumenmiaoshu1");
+            var bumenxinming=$(".bumenxinming1");
+            bumen.text(bumenname.val());
+            miaoshu.text(bumenmiaoshu.val());
+            xinming.text(bumenxinming.val());
+            $(".adds1").hide();
+        });
+        //查看
+        // 第一个
+        $(".chankan").click(function(){
+           $(".see").show();
+            var bumen=$(".bumen");
+            // console.log(bumen.text());
+            var miaoshu=$(".miaoshu");
+            var renshu=$(".renshu");
+            var xinming=$(".xinming");
+            var yZhang=$(".yZhang");
+            var rShu=$(".rShu");
+
+            var mShu=$(".mShu");
+            var xMing=$(".xMing");
+            yZhang.text(bumen.text());
+            mShu.text(miaoshu.text());
+            xMing.text(xinming.text());
+            rShu.text(renshu.text());
+
+            return false;
+        });
+        $("#queding").click(function(){
+           $(".see").hide();
+        });
+        // 第二个
+        $(".chakan1").click(function(){
+            $(".see1").show();
+            var bumen=$(".bumen1");
+            // console.log(bumen.text());
+            var miaoshu=$(".miaoshu1");
+            var renshu=$(".renshu1");
+            var xinming=$(".xinming1");
+            var yZhang=$(".yZhang1");
+            var rShu=$(".rShu1");
+
+            var mShu=$(".mShu1");
+            var xMing=$(".xMing1");
+            yZhang.text(bumen.text());
+            mShu.text(miaoshu.text());
+            xMing.text(xinming.text());
+            rShu.text(renshu.text());
+            return false;
+        });
+        $(".queding1").click(function(){
+            $(".see1").hide();
+        });
+
+        $(".btn6").click(function(){
+           var bumen=$(".bumen");
+           // console.log(bumen.text());
+           var miaoshu=$(".miaoshu");
+           var xinming=$(".xinming");
+           var bumenname=$(".bumenname");
+           var bumenmiaoshu=$(".bumenmiaoshu");
+           var bumenxinming=$(".bumenxinming");
+           bumen.text(bumenname.val());
+           miaoshu.text(bumenmiaoshu.val());
+           xinming.text(bumenxinming.val());
+           $("#add2").hide();
+        });
+        //删除
+        $('table>tbody').on('click', ".del", function () {
+            $(this).closest('tr').remove();
+        });
+        $('table>tbody').on('click', ".chankan1", function () {
+            $(".see").show();
+        });
+        $('table>tbody').on('click', ".bianji1", function () {
+            $("#add2").show();
+        });
+
+    })
+</script>
+</body>
+</html>
